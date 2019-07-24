@@ -17,18 +17,18 @@ html {
     position: fixed;
     width: 100vw;
     background-color: $brown;
-    padding: 1.5rem;
+    padding: 1.5rem 1.5rem .5rem 1.5rem;
 
     &__list {
         height: 0;
         margin: 0;
-        padding: 0;
+        padding: 1rem 0 0 0;
         list-style: none;
         overflow: hidden;
         transition: 0.5s;
 
         &--visible {
-            height: 45vh;
+            height: 47vh;
         }
     }
 
