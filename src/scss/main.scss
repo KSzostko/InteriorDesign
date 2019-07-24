@@ -28,12 +28,38 @@ html {
         transition: 0.5s;
 
         &--visible {
-            height: 47vh;
+            height: 80vw;
+
+            // mobile portrait
+            @media(min-width: 360px) and (orientation: portrait) {
+                height: 72vw;
+            }
+
+            @media(min-width: 410px) and (orientation: portrait) {
+                height: 65vw;
+            }
+
+            @media(min-width: 480px) and (orientation: portrait) {
+                height: 55vw;
+            }
+
+            @media(min-width: 600px) and (orientation: portrait) {
+                height: 50vw;
+            }
+
+            @media(min-width: 900px) and (orientation: portrait) {
+                height: 42vw;
+            }
         }
     }
 
     &__item {
         margin-bottom: .5rem;
+
+        // mobile portrait
+        @media(min-width: 768px) and (orientation: portrait) {
+            margin-bottom: .75rem;
+        }
     }
 
     &__link {
@@ -41,6 +67,15 @@ html {
         color: #fff;
         text-decoration: none;
         text-transform: uppercase;
+
+        // mobile portrait
+        @media(min-width: 600px) and (orientation: portrait) {
+            font-size: 1.25rem;
+        }
+
+        @media(min-width: 768px) and (orientation: portrait) {
+            font-size: 1.5rem;
+        }
     }
 
     &__button {
@@ -51,5 +86,10 @@ html {
         color: #fff;
         font-size: 1.25rem;
         background-color: transparent;
+
+        // mobile portrait
+        @media(min-width: 768px) and (orientation: portrait) {
+            top: 1vh;
+        }
     }
 }
