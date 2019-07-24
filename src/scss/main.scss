@@ -28,7 +28,12 @@ html {
         transition: 0.5s;
 
         &--visible {
-            height: 47vh;
+            height: 80vw;
+
+            // mobile portrait
+            @media(min-width: 360px) and (orientation: portrait) {
+                height: 72vw;
+            }
         }
     }
 
