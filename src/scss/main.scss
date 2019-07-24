@@ -125,6 +125,13 @@ html {
             align-items: center;
             padding: 0rem 1.25rem;
         }
+
+        &--active {
+            @media(min-width: 1024px) and (orientation: landscape) {
+                background-color: #fff;
+                color: $brown;
+            }
+        }
     }
 
     &__button {
