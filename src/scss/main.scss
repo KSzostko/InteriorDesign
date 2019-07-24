@@ -40,6 +40,11 @@ html {
             justify-content: center;
         }
 
+        // desktops
+        @media(min-width: 1024px) and (orientation: landscape) {
+            height: 6vh;
+        }
+
         &--visible {
             height: 80vw;
 
@@ -111,6 +116,14 @@ html {
             padding: 1rem 0.75rem;
             line-height: 5vh;
             font-size: 0.75rem;
+        }
+
+        // desktops
+        @media(min-width: 1024px) and (orientation: landscape) {
+            height: 6vh;
+            display: flex;
+            align-items: center;
+            padding: 0rem 1.25rem;
         }
     }
 
