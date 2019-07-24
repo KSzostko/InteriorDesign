@@ -19,6 +19,11 @@ html {
     background-color: $brown;
     padding: 1.5rem 1.5rem .5rem 1.5rem;
 
+    // mobile landscape
+    @media(min-width: 730px) and (orientation: landscape) {
+        padding: 0;
+    }
+
     &__list {
         height: 0;
         margin: 0;
@@ -26,6 +31,15 @@ html {
         list-style: none;
         overflow: hidden;
         transition: 0.5s;
+
+        // mobile landscape
+        @media(min-width: 730px) and (orientation: landscape) {
+            padding: 0;
+            height: 10vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
 
         &--visible {
             height: 80vw;
@@ -55,6 +69,10 @@ html {
             @media(orientation: landscape) {
                 height: 80vh;
             }
+
+            @media(min-width: 640px) and (orientation: landscape) {
+                height: 75vh;
+            }
         }
     }
 
@@ -64,6 +82,11 @@ html {
         // mobile portrait
         @media(min-width: 768px) and (orientation: portrait) {
             margin-bottom: .75rem;
+        }
+
+        // mobile landscape
+        @media(min-width: 730px) and (orientation: landscape) {
+            margin: 0;
         }
     }
 
@@ -80,6 +103,14 @@ html {
 
         @media(min-width: 768px) and (orientation: portrait) {
             font-size: 1.5rem;
+        }
+
+        // mobile landscape
+        @media(min-width: 730px) and (orientation: landscape) {
+            display: block;
+            height: 10vh;
+            padding: 1rem 0.75rem;
+            font-size: 0.75rem;
         }
     }
 
@@ -100,6 +131,10 @@ html {
         // mobile landscape
         @media(orientation: landscape) {
             top: 4vh;
+        }
+
+        @media(min-width: 730px) and (orientation: landscape) {
+            display: none;
         }
     }
 }
