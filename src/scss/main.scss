@@ -11,3 +11,45 @@ html {
 *:after {
     box-sizing: inherit;
 }
+
+// nav
+.navigation {
+    position: fixed;
+    width: 100vw;
+    background-color: $brown;
+    padding: 1.5rem;
+
+    &__list {
+        height: 0;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        overflow: hidden;
+        transition: 0.5s;
+
+        &--visible {
+            height: 45vh;
+        }
+    }
+
+    &__item {
+        margin-bottom: .5rem;
+    }
+
+    &__link {
+        font-family: $lato;
+        color: #fff;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+
+    &__button {
+        position: absolute;
+        top: 2vh;
+        right: 2%;
+        border-style: none;
+        color: #fff;
+        font-size: 1.25rem;
+        background-color: transparent;
+    }
+}
