@@ -51,6 +51,11 @@ html {
 
     &__item {
         margin-bottom: .5rem;
+
+        // mobile portrait
+        @media(min-width: 768px) and (orientation: portrait) {
+            margin-bottom: .75rem;
+        }
     }
 
     &__link {
@@ -63,6 +68,10 @@ html {
         @media(min-width: 600px) and (orientation: portrait) {
             font-size: 1.25rem;
         }
+
+        @media(min-width: 768px) and (orientation: portrait) {
+            font-size: 1.5rem;
+        }
     }
 
     &__button {
@@ -73,5 +82,10 @@ html {
         color: #fff;
         font-size: 1.25rem;
         background-color: transparent;
+
+        // mobile portrait
+        @media(min-width: 768px) and (orientation: portrait) {
+            top: 1vh;
+        }
     }
 }
