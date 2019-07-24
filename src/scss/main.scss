@@ -34,6 +34,10 @@ html {
             @media(min-width: 360px) and (orientation: portrait) {
                 height: 72vw;
             }
+
+            @media(min-width: 410px) and (orientation: portrait) {
+                height: 65vw;
+            }
         }
     }
 
