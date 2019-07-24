@@ -1,7 +1,6 @@
 @import "_normalize";
 @import "_variables";
 
-
 html {
     box-sizing: border-box;
     font-size: 16px;
@@ -11,4 +10,151 @@ html {
 *:before,
 *:after {
     box-sizing: inherit;
+}
+
+// nav
+.navigation {
+    position: fixed;
+    width: 100vw;
+    background-color: $brown;
+    padding: 1.5rem 1.5rem .5rem 1.5rem;
+
+    // mobile landscape
+    @media(min-width: 730px) and (orientation: landscape) {
+        padding: 0;
+    }
+
+    &__list {
+        height: 0;
+        margin: 0;
+        padding: 1rem 0 0 0;
+        list-style: none;
+        overflow: hidden;
+        transition: 0.5s;
+
+        // mobile landscape
+        @media(min-width: 730px) and (orientation: landscape) {
+            padding: 0;
+            height: 10vh;
+            display: flex;
+            justify-content: center;
+        }
+
+        // desktops
+        @media(min-width: 1024px) and (orientation: landscape) {
+            height: 6vh;
+        }
+
+        &--visible {
+            height: 80vw;
+
+            // mobile portrait
+            @media(min-width: 360px) and (orientation: portrait) {
+                height: 72vw;
+            }
+
+            @media(min-width: 410px) and (orientation: portrait) {
+                height: 65vw;
+            }
+
+            @media(min-width: 480px) and (orientation: portrait) {
+                height: 55vw;
+            }
+
+            @media(min-width: 600px) and (orientation: portrait) {
+                height: 50vw;
+            }
+
+            @media(min-width: 900px) and (orientation: portrait) {
+                height: 42vw;
+            }
+
+            // mobile landscape
+            @media(orientation: landscape) {
+                height: 80vh;
+            }
+
+            @media(min-width: 640px) and (orientation: landscape) {
+                height: 75vh;
+            }
+        }
+    }
+
+    &__item {
+        margin-bottom: .5rem;
+
+        // mobile portrait
+        @media(min-width: 768px) and (orientation: portrait) {
+            margin-bottom: .75rem;
+        }
+
+        // mobile landscape
+        @media(min-width: 730px) and (orientation: landscape) {
+            margin: 0;
+        }
+    }
+
+    &__link {
+        font-family: $lato;
+        color: #fff;
+        text-decoration: none;
+        text-transform: uppercase;
+
+        // mobile portrait
+        @media(min-width: 600px) and (orientation: portrait) {
+            font-size: 1.25rem;
+        }
+
+        @media(min-width: 768px) and (orientation: portrait) {
+            font-size: 1.5rem;
+        }
+
+        // mobile landscape
+        @media(min-width: 730px) and (orientation: landscape) {
+            display: block;
+            height: 10vh;
+            padding: 1rem 0.75rem;
+            line-height: 5vh;
+            font-size: 0.75rem;
+        }
+
+        // desktops
+        @media(min-width: 1024px) and (orientation: landscape) {
+            height: 6vh;
+            display: flex;
+            align-items: center;
+            padding: 0rem 1.25rem;
+        }
+
+        &--active {
+            @media(min-width: 1024px) and (orientation: landscape) {
+                background-color: #fff;
+                color: $brown;
+            }
+        }
+    }
+
+    &__button {
+        position: absolute;
+        top: 2vh;
+        right: 2%;
+        border-style: none;
+        color: #fff;
+        font-size: 1.25rem;
+        background-color: transparent;
+
+        // mobile portrait
+        @media(min-width: 768px) and (orientation: portrait) {
+            top: 1vh;
+        }
+
+        // mobile landscape
+        @media(orientation: landscape) {
+            top: 4vh;
+        }
+
+        @media(min-width: 730px) and (orientation: landscape) {
+            display: none;
+        }
+    }
 }

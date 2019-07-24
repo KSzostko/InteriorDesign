@@ -1,5 +1,8 @@
 "use strict";
 
-import moment from 'moment';
+const menuList = document.querySelector('.navigation__list--js');
+const btnMenu = document.querySelector('.navigation__button--js');
 
-console.log(moment().format('MMMM Do YYYY, h:mm:ss a'))
+btnMenu.addEventListener('click', () => {
+    menuList.classList.toggle('navigation__list--visible');
+})
