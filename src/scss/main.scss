@@ -180,11 +180,25 @@ html {
     &__header {
         font-family: $oswald;
         color: #fff;
+        letter-spacing: 0.25rem;
         text-align: center;
         text-transform: uppercase;
+
+        // mobile portrait
+        @media(min-width: 480px) and (orientation: portrait) {
+            font-size: 3rem;
+        }
+
+        @media(min-width: 768px) and (orientation: portrait) {
+            font-size: 4rem;
+        }
     }
 
     &__image {
         width: 80%;
+
+        @media(min-width: 768px) and (orientation: portrait) {
+            width: 60%;
+        }
     }
 }
