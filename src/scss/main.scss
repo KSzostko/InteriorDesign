@@ -30,6 +30,11 @@ html {
         padding: 0;
     }
 
+    // desktops
+    @media(min-width: 1024px) and (orientation: landscape) {
+        height: 8vh;
+    }
+
     &__list {
         position: relative;
         top: calc(100% - 1rem);
