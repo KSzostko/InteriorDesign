@@ -241,5 +241,10 @@ html {
         @media(min-width: 730px) and (orientation: landscape) {
             width: 30%;
         }
+
+        // desktops
+        @media(min-width: 1024px) and (orientation: landscape) {
+            width: 20%;
+        }
     }
 }
