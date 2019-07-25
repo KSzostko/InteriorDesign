@@ -15,9 +15,10 @@ html {
 // nav
 .navigation {
     position: fixed;
+    height: 8vh;
     width: 100vw;
     background-color: $brown;
-    padding: 1.5rem 1.5rem .5rem 1.5rem;
+    padding: 1.5rem 0 .5rem 0;
 
     // mobile landscape
     @media(min-width: 730px) and (orientation: landscape) {
@@ -25,15 +26,19 @@ html {
     }
 
     &__list {
+        position: relative;
+        top: calc(100% - 0.1rem);
         height: 0;
         margin: 0;
-        padding: 1rem 0 0 0;
+        padding: 0 1.5rem;
+        background-color: $brown;
         list-style: none;
         overflow: hidden;
         transition: 0.5s;
 
         // mobile landscape
         @media(min-width: 730px) and (orientation: landscape) {
+            top: 0;
             padding: 0;
             height: 10vh;
             display: flex;
@@ -42,7 +47,7 @@ html {
 
         // desktops
         @media(min-width: 1024px) and (orientation: landscape) {
-            height: 6vh;
+            height: 8vh;
         }
 
         &--visible {
@@ -120,7 +125,7 @@ html {
 
         // desktops
         @media(min-width: 1024px) and (orientation: landscape) {
-            height: 6vh;
+            height: 8vh;
             display: flex;
             align-items: center;
             padding: 0rem 1.25rem;
@@ -145,14 +150,10 @@ html {
 
         // mobile portrait
         @media(min-width: 768px) and (orientation: portrait) {
-            top: 1vh;
+            font-size: 2rem;
         }
 
         // mobile landscape
-        @media(orientation: landscape) {
-            top: 4vh;
-        }
-
         @media(min-width: 730px) and (orientation: landscape) {
             display: none;
         }
