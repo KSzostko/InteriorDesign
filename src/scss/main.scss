@@ -191,6 +191,11 @@ html {
         height: 90vh;
     }
 
+    // desktops
+    @media(min-width: 1024px) and (orientation: landscape) {
+        height: 80vh;
+    }
+
     &__header {
         font-family: $oswald;
         color: #fff;
