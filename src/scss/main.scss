@@ -202,6 +202,11 @@ html {
         @media(min-width: 768px) and (orientation: portrait) {
             font-size: 4rem;
         }
+
+        // mobile landscape
+        @media(min-width: 730px) and (orientation: landscape) {
+            font-size: 2.5rem;
+        }
     }
 
     &__image {
@@ -216,9 +221,9 @@ html {
         @media(orientation: landscape) {
             width: 50%;
         }
-    }
-}
 
-body {
-    height: 300vh;
+        @media(min-width: 730px) and (orientation: landscape) {
+            width: 30%;
+        }
+    }
 }
