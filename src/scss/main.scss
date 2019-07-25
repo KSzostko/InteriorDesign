@@ -165,7 +165,26 @@ html {
 .top {
     height: 70vh;
     margin-top: 8vh;
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
     background-image: url('../assets/img/bg/top-bg.jpg');
+    background-blend-mode: darken;
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
+
+    &__header {
+        font-family: $oswald;
+        color: #fff;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    &__image {
+        width: 80%;
+    }
 }
