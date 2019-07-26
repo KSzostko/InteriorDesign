@@ -267,6 +267,10 @@ html {
         height: 95vh;
     }
 
+    @media(min-width: 410px) and (orientation: portrait) {
+        height: 100vh;
+    }
+
     &__intro {
         margin-bottom: 4rem;
     }
