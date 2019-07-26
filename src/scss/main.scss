@@ -294,8 +294,27 @@ html {
         padding: 4rem;
     }
 
+    // desktops
+    @media(min-width: 1024px) and (orientation: landscape) {
+        height: 70vh;
+        max-height: 530px;
+        max-width: 1520px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: 100px 1fr 1fr 100px;
+        grid-template-areas: ". intro image ."
+            ". services image .";
+    }
+
     &__intro {
         margin-bottom: 4rem;
+
+        // desktops
+        @media(min-width: 1024px) and (orientation: landscape) {
+            grid-area: intro;
+            margin-bottom: 0.5rem;
+        }
     }
 
     &__subheader {
@@ -323,6 +342,11 @@ html {
         // mobile portrait
         @media(min-width: 768px) and (orientation: portrait) {
             font-size: 3rem;
+        }
+
+        // desktops
+        @media(min-width: 1024px) and (orientation: landscape) {
+            font-size: 2.5rem;
         }
     }
 
@@ -359,6 +383,14 @@ html {
             display: flex;
             height: 20vh;
         }
+
+        // desktops
+        @media(min-width: 1024px) and (orientation: landscape) {
+            height: 12vh;
+            max-height: 90px;
+            max-width: 595px;
+            grid-area: services;
+        }
     }
 
     &__service {
@@ -374,6 +406,11 @@ html {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+
+        // desktops
+        @media(min-width: 1024px) and (orientation: landscape) {
+            font-size: 0.875rem;
+        }
 
         &--active {
             background-color: $dark-gray;
@@ -403,6 +440,13 @@ html {
         // mobile landscape
         @media(orientation: landscape) {
             width: 60%;
+        }
+
+        // desktops
+        @media(min-width: 1024px) and (orientation: landscape) {
+            width: 80%;
+            max-width: 476px;
+            grid-area: image;
         }
     }
 }
