@@ -252,12 +252,26 @@ html {
 // welcome
 .welcome {
     padding: 4rem 1rem;
+    font-family: $lato;
 
     &__subheader {
-        font-family: $oswald;
         color: $light-grey;
         font-weight: 300;
+        font-size: 0.8rem;
         letter-spacing: 0.05rem;
         text-transform: uppercase;
+    }
+
+    &__header {
+        margin-top: 0.25rem;
+        font-family: $oswald;
+        font-size: 1.7rem;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    &__our-site {
+        color: $brown;
+        font-style: normal;
     }
 }
