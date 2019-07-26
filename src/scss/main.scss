@@ -259,7 +259,12 @@ html {
 
     // mobile portrait
     @media(min-width: 360px) and (orientation: portrait) {
-        height: 120vh;
+        height: 115vh;
+    }
+
+    // Iphone X
+    @media(max-width: 376px) and (min-height: 812px) {
+        height: 95vh;
     }
 
     &__intro {
