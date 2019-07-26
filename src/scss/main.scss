@@ -285,6 +285,10 @@ html {
         height: 210vh;
     }
 
+    @media(min-width: 730px) and (orientation: landscape) {
+        height: 180vh;
+    }
+
     &__intro {
         margin-bottom: 4rem;
     }
