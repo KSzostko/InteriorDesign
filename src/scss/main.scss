@@ -257,6 +257,11 @@ html {
     padding: 4rem 1rem;
     font-family: $lato;
 
+    // mobile portrait
+    @media(min-width: 360px) and (orientation: portrait) {
+        height: 120vh;
+    }
+
     &__intro {
         margin-bottom: 4rem;
     }
