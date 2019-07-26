@@ -275,26 +275,42 @@ html {
         height: 90vh;
     }
 
+    // mobile portrait
+    @media(min-width: 768px) and (orientation: portrait) {
+        height: 100vh;
+        padding: 4rem 2rem;
+    }
+
     &__intro {
         margin-bottom: 4rem;
     }
 
     &__subheader {
-        color: $light-grey;
+        color: $light-gray;
         font-weight: 300;
         font-size: 0.8rem;
         letter-spacing: 0.05rem;
         text-transform: uppercase;
+
+        // mobile portrait
+        @media(min-width: 768px) and (orientation: portrait) {
+            font-size: 1rem;
+        }
     }
 
     &__header {
         margin-top: 0.25rem;
         padding-bottom: 1rem;
-        border-bottom: 1px solid $light-grey;
+        border-bottom: 1px solid $light-gray;
         font-family: $oswald;
         font-size: 1.7rem;
         font-weight: 700;
         text-transform: uppercase;
+
+        // mobile portrait
+        @media(min-width: 768px) and (orientation: portrait) {
+            font-size: 3rem;
+        }
     }
 
     &__our-site {
@@ -304,10 +320,71 @@ html {
 
     &__description {
         line-height: 1.5;
+
+        // mobile portrait
+        @media(min-width: 768px) and (orientation: portrait) {
+            font-size: 1.25rem;
+        }
     }
 
     &__services {
         display: none;
+
+        // mobile portrait
+        @media(min-width: 768px) and (orientation: portrait) {
+            width: 100%;
+            height: 10vh;
+            display: flex;
+            margin-bottom: 4rem;
+            background-image: url('../assets/img/bg/witamy-tlo.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+    }
+
+    &__service {
+
+        // mobile portrait
+        @media(min-width: 768px) and (orientation: portrait) {
+            flex-basis: 25%;
+            font-family: $oswald;
+            font-weight: 300;
+            color: $brown;
+            text-decoration: none;
+            text-transform: uppercase;
+
+            // content inside link
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        &--active {
+
+            // mobile portrait
+            @media(min-width: 768px) and (orientation: portrait) {
+                background-color: $dark-gray;
+                color: #fff;
+            }
+        }
+    }
+
+    &__service-image {
+
+        // mobile portrait
+        @media(min-width: 768px) and (orientation: portrait) {
+            margin-bottom: 0.5rem;
+        }
+
+        &--active {
+
+            // mobile portrait
+            @media(min-width: 768px) and (orientation: portrait) {
+                filter: brightness(3);
+            }
+        }
     }
 
     &__image {
@@ -315,5 +392,10 @@ html {
         width: 80%;
         left: 50%;
         transform: translateX(-50%);
+
+        // mobile portrait
+        @media(min-width: 768px) and (orientation: portrait) {
+            width: 60%;
+        }
     }
 }
