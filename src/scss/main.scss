@@ -248,3 +248,16 @@ html {
         }
     }
 }
+
+// welcome
+.welcome {
+    padding: 4rem 1rem;
+
+    &__subheader {
+        font-family: $oswald;
+        color: $light-grey;
+        font-weight: 300;
+        letter-spacing: 0.05rem;
+        text-transform: uppercase;
+    }
+}
