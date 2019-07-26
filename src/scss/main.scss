@@ -253,6 +253,7 @@ html {
 // welcome
 .welcome {
     position: relative;
+    height: 150vh;
     padding: 4rem 1rem;
     font-family: $lato;
 
@@ -296,5 +297,6 @@ html {
         width: 80%;
         left: 50%;
         transform: translateX(-50%);
+        margin-bottom: 4rem;
     }
 }
