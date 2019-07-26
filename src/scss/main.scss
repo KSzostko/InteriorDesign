@@ -275,10 +275,23 @@ html {
         height: 90vh;
     }
 
-    // mobile portrait
     @media(min-width: 768px) and (orientation: portrait) {
         height: 100vh;
         padding: 4rem 2rem;
+    }
+
+    // mobile landscape
+    @media(orientation: landscape) {
+        height: 210vh;
+    }
+
+    @media(min-width: 730px) and (orientation: landscape) {
+        height: 220vh;
+    }
+
+    @media(min-width: 850px) and (orientation: landscape) {
+        height: 180vh;
+        padding: 4rem;
     }
 
     &__intro {
@@ -329,61 +342,50 @@ html {
 
     &__services {
         display: none;
+        width: 100%;
+        height: 10vh;
+        margin-bottom: 4rem;
+        background-image: url('../assets/img/bg/witamy-tlo.jpg');
+        background-size: cover;
+        background-position: center;
 
         // mobile portrait
         @media(min-width: 768px) and (orientation: portrait) {
-            width: 100%;
-            height: 10vh;
             display: flex;
-            margin-bottom: 4rem;
-            background-image: url('../assets/img/bg/witamy-tlo.jpg');
-            background-size: cover;
-            background-position: center;
+        }
+
+        // mobile landscape
+        @media(min-width: 730px) and (orientation: landscape) {
+            display: flex;
+            height: 20vh;
         }
     }
 
     &__service {
+        flex-basis: 25%;
+        font-family: $oswald;
+        font-weight: 300;
+        color: $brown;
+        text-decoration: none;
+        text-transform: uppercase;
 
-        // mobile portrait
-        @media(min-width: 768px) and (orientation: portrait) {
-            flex-basis: 25%;
-            font-family: $oswald;
-            font-weight: 300;
-            color: $brown;
-            text-decoration: none;
-            text-transform: uppercase;
-
-            // content inside link
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-
-        }
+        // content inside link
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
 
         &--active {
-
-            // mobile portrait
-            @media(min-width: 768px) and (orientation: portrait) {
-                background-color: $dark-gray;
-                color: #fff;
-            }
+            background-color: $dark-gray;
+            color: #fff;
         }
     }
 
     &__service-image {
-
-        // mobile portrait
-        @media(min-width: 768px) and (orientation: portrait) {
-            margin-bottom: 0.5rem;
-        }
+        margin-bottom: 0.5rem;
 
         &--active {
-
-            // mobile portrait
-            @media(min-width: 768px) and (orientation: portrait) {
-                filter: brightness(3);
-            }
+            filter: brightness(3);
         }
     }
 
@@ -395,6 +397,11 @@ html {
 
         // mobile portrait
         @media(min-width: 768px) and (orientation: portrait) {
+            width: 60%;
+        }
+
+        // mobile landscape
+        @media(orientation: landscape) {
             width: 60%;
         }
     }
