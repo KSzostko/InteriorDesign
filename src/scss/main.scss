@@ -289,6 +289,11 @@ html {
         height: 180vh;
     }
 
+    @media(min-width: 850px) and (orientation: landscape) {
+        height: 150vh;
+        padding: 4rem;
+    }
+
     &__intro {
         margin-bottom: 4rem;
     }
