@@ -20,6 +20,7 @@ html {
     width: 100vw;
     background-color: $brown;
     padding: 1.5rem 0 0 0;
+    z-index: 1;
 
     // mobile landscape
     @media(orientation: landscape) {
@@ -251,8 +252,13 @@ html {
 
 // welcome
 .welcome {
+    position: relative;
     padding: 4rem 1rem;
     font-family: $lato;
+
+    &__intro {
+        margin-bottom: 4rem;
+    }
 
     &__subheader {
         color: $light-grey;
@@ -264,6 +270,8 @@ html {
 
     &__header {
         margin-top: 0.25rem;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid $light-grey;
         font-family: $oswald;
         font-size: 1.7rem;
         font-weight: 700;
@@ -273,5 +281,20 @@ html {
     &__our-site {
         color: $brown;
         font-style: normal;
+    }
+
+    &__description {
+        line-height: 1.5;
+    }
+
+    &__services {
+        display: none;
+    }
+
+    &__image {
+        position: absolute;
+        width: 80%;
+        left: 50%;
+        transform: translateX(-50%);
     }
 }
