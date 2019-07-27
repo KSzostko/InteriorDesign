@@ -454,17 +454,45 @@ html {
 // portfolio
 .portfolio {
     margin-top: 4rem;
-    padding: 2rem 1rem;
     background-color: $light-bgc;
 
-    // mobile portrait
-    @media(min-width: 768px) and (orientation: portrait) {
-        padding: 2rem 8rem;
+    &__wrapper {
+        padding: 2rem 1rem;
+
+        // mobile portrait
+        @media(min-width: 768px) and (orientation: portrait) {
+            padding: 2rem 8rem;
+        }
+
+        // mobile landscape
+        @media(min-width: 730px) and (orientation: landscape) {
+            padding: 2rem 8rem;
+        }
+
+        // desktops
+        @media(min-width: 1024px) and (orientation: landscape) {
+            height: 85vh;
+            max-width: 1520px;
+            max-height: 642px;
+            margin: 0 auto;
+            padding: 4rem 10rem;
+            display: grid;
+            grid-template-rows: 1fr 4fr 4fr;
+            row-gap: 2rem;
+            grid-template-columns: repeat(4, 1fr);
+            column-gap: 2rem;
+            grid-template-areas: "text text text text"
+                "main-project main-project image1 image2"
+                "main-project main-project image-big image-big";
+        }
     }
 
-    // mobile landscape
-    @media(min-width: 730px) and (orientation: landscape) {
-        padding: 2rem 8rem;
+    &__text-content {
+
+        // desktops
+        @media(min-width: 1024px) and (orientation: landscape) {
+            grid-area: text;
+        }
     }
 
     &__header {
@@ -472,6 +500,12 @@ html {
         font-family: $oswald;
         font-size: 1.7rem;
         text-transform: uppercase;
+
+        // desktops
+        @media(min-width: 1024px) and (orientation: landscape) {
+            margin-top: 0;
+            font-size: 2rem;
+        }
     }
 
     &__description {
@@ -490,6 +524,12 @@ html {
         // mobile landscape
         @media(orientation: landscape) {
             height: 90vh;
+        }
+
+        // desktops
+        @media(min-width: 1024px) and (orientation: landscape) {
+            height: 100%;
+            grid-area: main-project;
         }
     }
 
@@ -511,6 +551,12 @@ html {
         @media(orientation: landscape) {
             height: 90vh;
         }
+
+        // desktops
+        @media(min-width: 1024px) and (orientation: landscape) {
+            height: 100%;
+            padding: 0 2rem;
+        }
     }
 
     &__project-name {
@@ -523,6 +569,11 @@ html {
         @media(min-width: 480px) and (orientation: portrait) {
             font-size: 1.5rem;
         }
+
+        // desktops
+        @media(min-width: 1024px) and (orientation: landscape) {
+            font-size: 1.75rem;
+        }
     }
 
     &__project-info {
@@ -534,13 +585,48 @@ html {
         @media(min-width: 480px) and (orientation: portrait) {
             font-size: 1rem;
         }
+
+        // desktops
+        @media(min-width: 1024px) and (orientation: landscape) {
+            font-size: 1rem;
+        }
     }
 
     &__image {
         width: 49%;
 
+        // desktops
+        @media(min-width: 1024px) and (orientation: landscape) {
+            height: 100%;
+            width: 100%;
+        }
+
+        &:first-of-type {
+
+            // desktops
+            @media(min-width: 1024px) and (orientation: landscape) {
+                grid-area: image1;
+            }
+        }
+
+        &:nth-of-type(2) {
+
+            // desktops
+            @media(min-width: 1024px) and (orientation: landscape) {
+                grid-area: image2;
+            }
+        }
+
+
         &--big {
             width: 99%;
+
+            // desktops
+            @media(min-width: 1024px) and (orientation: landscape) {
+                height: 100%;
+                width: 100%;
+                grid-area: image-big;
+            }
         }
     }
 }
