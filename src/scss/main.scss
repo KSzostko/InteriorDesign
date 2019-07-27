@@ -480,6 +480,11 @@ html {
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
+
+        // mobile landscape
+        @media(orientation: landscape) {
+            height: 90vh;
+        }
     }
 
     &__project-description {
@@ -494,6 +499,11 @@ html {
         // mobile portrait
         @media(min-width: 480px) and (orientation: portrait) {
             padding: 0 4rem;
+        }
+
+        // mobile landscape
+        @media(orientation: landscape) {
+            height: 90vh;
         }
     }
 
