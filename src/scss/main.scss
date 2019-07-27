@@ -295,7 +295,7 @@ html {
     }
 
     // desktops
-    @media(min-width: 1024px) and (orientation: landscape) {
+    @media(min-width: 1025px) and (orientation: landscape) {
         height: 70vh;
         max-height: 530px;
         max-width: 1520px;
@@ -311,7 +311,7 @@ html {
         margin-bottom: 4rem;
 
         // desktops
-        @media(min-width: 1024px) and (orientation: landscape) {
+        @media(min-width: 1025px) and (orientation: landscape) {
             grid-area: intro;
             margin-bottom: 0.5rem;
         }
@@ -345,7 +345,7 @@ html {
         }
 
         // desktops
-        @media(min-width: 1024px) and (orientation: landscape) {
+        @media(min-width: 1054px) and (orientation: landscape) {
             font-size: 2.5rem;
         }
     }
@@ -385,7 +385,7 @@ html {
         }
 
         // desktops
-        @media(min-width: 1024px) and (orientation: landscape) {
+        @media(min-width: 1025px) and (orientation: landscape) {
             height: 12vh;
             max-height: 90px;
             max-width: 595px;
@@ -408,7 +408,7 @@ html {
         align-items: center;
 
         // desktops
-        @media(min-width: 1024px) and (orientation: landscape) {
+        @media(min-width: 1025px) and (orientation: landscape) {
             font-size: 0.875rem;
         }
 
@@ -443,7 +443,7 @@ html {
         }
 
         // desktops
-        @media(min-width: 1024px) and (orientation: landscape) {
+        @media(min-width: 1025px) and (orientation: landscape) {
             width: 80%;
             max-width: 476px;
             grid-area: image;
@@ -453,11 +453,17 @@ html {
 
 // portfolio
 .portfolio {
+    margin-top: 4rem;
     padding: 2rem 1rem;
     background-color: $light-bgc;
 
     // mobile portrait
     @media(min-width: 768px) and (orientation: portrait) {
+        padding: 2rem 8rem;
+    }
+
+    // mobile landscape
+    @media(min-width: 730px) and (orientation: landscape) {
         padding: 2rem 8rem;
     }
 
@@ -480,6 +486,11 @@ html {
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
+
+        // mobile landscape
+        @media(orientation: landscape) {
+            height: 90vh;
+        }
     }
 
     &__project-description {
@@ -494,6 +505,11 @@ html {
         // mobile portrait
         @media(min-width: 480px) and (orientation: portrait) {
             padding: 0 4rem;
+        }
+
+        // mobile landscape
+        @media(orientation: landscape) {
+            height: 90vh;
         }
     }
 
