@@ -456,6 +456,11 @@ html {
     padding: 2rem 1rem;
     background-color: $light-bgc;
 
+    // mobile portrait
+    @media(min-width: 768px) and (orientation: portrait) {
+        padding: 2rem 8rem;
+    }
+
     &__header {
         margin-bottom: 1rem;
         font-family: $oswald;
@@ -519,7 +524,7 @@ html {
         width: 49%;
 
         &--big {
-            width: 100%;
+            width: 99%;
         }
     }
 }
