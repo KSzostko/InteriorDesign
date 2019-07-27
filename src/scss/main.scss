@@ -467,6 +467,24 @@ html {
         padding: 2rem 8rem;
     }
 
+    // desktops
+    @media(min-width: 1024px) and (orientation: landscape) {
+        display: grid;
+    }
+
+    &__text-content {
+
+        // desktops
+        @media(min-width: 1024px) and (orientation: landscape) {
+            grid-area: text;
+            grid-template-rows: repeat(3, 1fr);
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-areas: "text text text text"
+                "main-project main-project image1 image2"
+                "main-project main-project image-big image-big";
+        }
+    }
+
     &__header {
         margin-bottom: 1rem;
         font-family: $oswald;
@@ -490,6 +508,11 @@ html {
         // mobile landscape
         @media(orientation: landscape) {
             height: 90vh;
+        }
+
+        // desktops
+        @media(min-width: 1024px) and (orientation: landscape) {
+            grid-area: main-project;
         }
     }
 
@@ -539,8 +562,30 @@ html {
     &__image {
         width: 49%;
 
+        &:first-of-type {
+
+            // desktops
+            @media(min-width: 1024px) and (orientation: landscape) {
+                grid-area: image1;
+            }
+        }
+
+        &:nth-of-type(2) {
+
+            // desktops
+            @media(min-width: 1024px) and (orientation: landscape) {
+                grid-area: image2;
+            }
+        }
+
+
         &--big {
             width: 99%;
+
+            // desktops
+            @media(min-width: 1024px) and (orientation: landscape) {
+                grid-area: image-big;
+            }
         }
     }
 }
