@@ -469,7 +469,13 @@ html {
 
     // desktops
     @media(min-width: 1024px) and (orientation: landscape) {
+        height: 90vh;
         display: grid;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas: "text text text text"
+            "main-project main-project image1 image2"
+            "main-project main-project image-big image-big";
     }
 
     &__text-content {
@@ -477,11 +483,6 @@ html {
         // desktops
         @media(min-width: 1024px) and (orientation: landscape) {
             grid-area: text;
-            grid-template-rows: repeat(3, 1fr);
-            grid-template-columns: repeat(4, 1fr);
-            grid-template-areas: "text text text text"
-                "main-project main-project image1 image2"
-                "main-project main-project image-big image-big";
         }
     }
 
@@ -512,6 +513,7 @@ html {
 
         // desktops
         @media(min-width: 1024px) and (orientation: landscape) {
+            height: 30vh;
             grid-area: main-project;
         }
     }
@@ -533,6 +535,11 @@ html {
         // mobile landscape
         @media(orientation: landscape) {
             height: 90vh;
+        }
+
+        // desktops
+        @media(min-width: 1024px) and (orientation: landscape) {
+            height: 30vh;
         }
     }
 
