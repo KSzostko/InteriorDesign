@@ -450,3 +450,61 @@ html {
         }
     }
 }
+
+// portfolio
+.portfolio {
+    padding: 2rem 1rem;
+    background-color: $light-bgc;
+
+    &__header {
+        margin-bottom: 1rem;
+        font-family: $oswald;
+        font-size: 1.7rem;
+        text-transform: uppercase;
+    }
+
+    &__description {
+        font-family: $lato;
+    }
+
+    &__project {
+        height: 40vh;
+        margin-bottom: 1rem;
+        color: #fff;
+        background-image: url('../assets/img/portfolio/realizacja-1.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    &__project-description {
+        height: 40vh;
+        padding: 0 1rem;
+        background-color: rgba(190, 140, 107, 0.7);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    &__project-name {
+        margin-bottom: 0.25rem;
+        font-family: $oswald;
+        font-size: 1.25rem;
+        text-transform: uppercase;
+    }
+
+    &__project-info {
+        font-family: $lato;
+        font-size: 0.75rem;
+        margin-top: 0.25rem;
+    }
+
+    &__image {
+        width: 49%;
+
+        &--big {
+            width: 100%;
+        }
+    }
+}
