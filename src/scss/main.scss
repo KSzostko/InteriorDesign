@@ -654,6 +654,11 @@ html {
         padding: 2rem;
     }
 
+    // desktops
+    @media(min-width: 1025px) and (orientation: landscape) {
+        padding: 2rem 10rem;
+    }
+
     &__intro {
 
         // mobile portrait
