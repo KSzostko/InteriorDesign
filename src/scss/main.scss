@@ -636,6 +636,21 @@ html {
 .services {
     padding: 2rem 1rem;
 
+    // mobile portrait
+    @media(min-width: 600px) and (orientation: portrait) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    &__intro {
+
+        // mobile portrait
+        @media(min-width: 600px) and (orientation: portrait) {
+            flex-basis: 100%;
+        }
+    }
+
     &__header {
         margin-bottom: 0.5rem;
         font-family: $oswald;
@@ -654,6 +669,11 @@ html {
         margin-bottom: 2rem;
         display: flex;
         flex-wrap: wrap;
+
+        // mobile portrait
+        @media(min-width: 600px) and (orientation: portrait) {
+            flex-basis: 48%;
+        }
     }
 
     &__image {
