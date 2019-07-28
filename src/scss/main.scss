@@ -654,6 +654,14 @@ html {
         padding: 2rem;
     }
 
+    // desktops
+    @media(min-width: 1025px) and (orientation: landscape) {
+        max-height: 612px;
+        max-width: 1520px;
+        margin: 0 auto;
+        padding: 2rem 10rem;
+    }
+
     &__intro {
 
         // mobile portrait
@@ -672,6 +680,11 @@ html {
         font-family: $oswald;
         font-size: 1.7rem;
         text-transform: uppercase;
+
+        // desktops
+        @media(min-width: 1025px) and (orientation: landscape) {
+            font-size: 2rem;
+        }
     }
 
     &__description {
@@ -694,6 +707,11 @@ html {
         // mobile landscape
         @media(min-width: 640px) and (orientation: landscape) {
             flex-basis: 48%;
+        }
+
+        // desktops
+        @media(min-width: 1025px) and (orientation: landscape) {
+            flex-basis: 30%;
         }
     }
 
