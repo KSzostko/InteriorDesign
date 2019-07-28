@@ -672,6 +672,11 @@ html {
         font-family: $oswald;
         font-size: 1.7rem;
         text-transform: uppercase;
+
+        // desktops
+        @media(min-width: 1025px) and (orientation: landscape) {
+            font-size: 2rem;
+        }
     }
 
     &__description {
