@@ -705,6 +705,11 @@ html {
         @media(min-width: 640px) and (orientation: landscape) {
             flex-basis: 48%;
         }
+
+        // desktops
+        @media(min-width: 1025px) and (orientation: landscape) {
+            flex-basis: 30%;
+        }
     }
 
     &__image {
