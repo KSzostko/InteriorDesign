@@ -650,6 +650,10 @@ html {
         justify-content: space-between;
     }
 
+    @media(min-width: 850px) and (orientation: landscape) {
+        padding: 2rem;
+    }
+
     &__intro {
 
         // mobile portrait
