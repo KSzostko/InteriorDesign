@@ -643,10 +643,26 @@ html {
         justify-content: space-between;
     }
 
+    // mobile landscape
+    @media(min-width: 640px) and (orientation: landscape) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    @media(min-width: 850px) and (orientation: landscape) {
+        padding: 2rem;
+    }
+
     &__intro {
 
         // mobile portrait
         @media(min-width: 600px) and (orientation: portrait) {
+            flex-basis: 100%;
+        }
+
+        // mobile portrait
+        @media(min-width: 640px) and (orientation: landscape) {
             flex-basis: 100%;
         }
     }
@@ -672,6 +688,11 @@ html {
 
         // mobile portrait
         @media(min-width: 600px) and (orientation: portrait) {
+            flex-basis: 48%;
+        }
+
+        // mobile landscape
+        @media(min-width: 640px) and (orientation: landscape) {
             flex-basis: 48%;
         }
     }
