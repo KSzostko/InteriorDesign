@@ -656,6 +656,11 @@ html {
         @media(min-width: 600px) and (orientation: portrait) {
             flex-basis: 100%;
         }
+
+        // mobile portrait
+        @media(min-width: 640px) and (orientation: landscape) {
+            flex-basis: 100%;
+        }
     }
 
     &__header {
