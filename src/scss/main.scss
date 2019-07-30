@@ -831,6 +831,10 @@ html {
         @media(max-width: 376px) and (min-height: 812px) {
             top: 60%;
         }
+
+        @media(min-width: 410px) and (orientation: portrait) {
+            top: 60%;
+        }
     }
 
     &__item-header {
