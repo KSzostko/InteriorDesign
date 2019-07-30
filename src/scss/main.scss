@@ -821,6 +821,11 @@ html {
         padding: 0 1rem;
         background-color: rgba(0, 0, 0, 0.5);
         color: #fff;
+
+        // mobile portrait
+        @media(min-width: 360px) and (orientation: portrait) {
+            top: 55%;
+        }
     }
 
     &__item-header {
