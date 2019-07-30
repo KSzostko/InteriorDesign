@@ -764,6 +764,9 @@ html {
 
         // desktops
         @media(min-width: 1024px) and (orientation: landscape) {
+            max-height: 526px;
+            max-width: 1520px;
+            margin: 0 auto;
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
@@ -775,6 +778,7 @@ html {
 
         // dekstops
         @media(min-width: 1024px) and (orientation: landscape) {
+            padding-left: 8rem;
             flex-basis: 100%;
         }
     }
@@ -784,6 +788,11 @@ html {
         font-family: $oswald;
         font-size: 1.7rem;
         text-transform: uppercase;
+
+        // desktops
+        @media(min-width: 1024px) and (orientation: landscape) {
+            font-size: 2rem;
+        }
     }
 
     &__description {
@@ -803,7 +812,7 @@ html {
 
             // desktops
             @media(min-width: 1024px) and (orientation: landscape) {
-                margin-right: 3rem;
+                margin-right: 2rem;
             }
         }
 
@@ -828,6 +837,8 @@ html {
 
         // desktops
         @media(min-width: 1024px) and (orientation: landscape) {
+            max-height: 301px;
+            max-width: 582px;
             height: 40vh;
             flex-basis: 40%;
         }
@@ -873,6 +884,14 @@ html {
             top: -2%;
             bottom: 85%;
             right: 90%;
+        }
+
+        // desktops
+        @media(min-width: 1024px) and (orientation: landscape) {
+            max-width: 93px;
+            max-height: 81px;
+            bottom: 75%;
+            right: 85%;
         }
     }
 
@@ -942,6 +961,7 @@ html {
 
         // desktops
         @media(min-width: 1024px) and (orientation: landscape) {
+            max-height: 150px;
             top: 50%;
         }
     }
