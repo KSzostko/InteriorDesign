@@ -459,11 +459,6 @@ html {
     &__wrapper {
         padding: 2rem 1rem;
 
-        // mobile portrait
-        @media(min-width: 768px) and (orientation: portrait) {
-            padding: 2rem 8rem;
-        }
-
         // mobile landscape
         @media(min-width: 730px) and (orientation: landscape) {
             padding: 2rem 8rem;
@@ -521,6 +516,12 @@ html {
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
+
+        // mobile portrait
+        @media(min-width: 768px) and (orientation: portrait) {
+            margin-left: 8rem;
+            margin-right: 8rem;
+        }
 
         // mobile landscape
         @media(orientation: landscape) {
@@ -617,7 +618,6 @@ html {
                 grid-area: image2;
             }
         }
-
 
         &--big {
             width: 99%;
@@ -757,10 +757,10 @@ html {
     &__wrapper {
         padding: 2rem 1rem;
 
-        // mobile portrait
-        @media(min-width: 768px) and (orientation: portrait) {
-            padding: 2rem 8rem;
-        }
+        // // mobile portrait
+        // @media(min-width: 768px) and (orientation: portrait) {
+        //     padding: 2rem 8rem;
+        // }
     }
 
     &__intro {
@@ -797,6 +797,12 @@ html {
         // mobile portrait
         @media(min-width: 600px) and (orientation: portrait) {
             height: 35vh;
+        }
+
+        // mobile portrait
+        @media(min-width: 768px) and (orientation: portrait) {
+            margin-left: 8rem;
+            margin-right: 8rem;
         }
     }
 
@@ -875,6 +881,11 @@ html {
         // mobile portrait
         @media(min-width: 600px) and (orientation: portrait) {
             top: 50%;
+        }
+
+        // mobile portrait
+        @media(min-width: 800px) and (orientation: portrait) {
+            top: 60%;
         }
     }
 
