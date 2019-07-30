@@ -893,6 +893,10 @@ html {
         @media(orientation: landscape) {
             top: 50%;
         }
+
+        @media(min-width: 667px) and (orientation: landscape) {
+            top: 60%;
+        }
     }
 
     &__item-header {
