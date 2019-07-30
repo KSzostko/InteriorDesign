@@ -761,10 +761,26 @@ html {
         @media(min-width: 850px) and (orientation: landscape) {
             padding: 2rem;
         }
+
+        // desktops
+        @media(min-width: 1024px) and (orientation: landscape) {
+            max-height: 526px;
+            max-width: 1520px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
     }
 
     &__intro {
         margin-bottom: 2rem;
+
+        // dekstops
+        @media(min-width: 1024px) and (orientation: landscape) {
+            padding-left: 8rem;
+            flex-basis: 100%;
+        }
     }
 
     &__header {
@@ -772,6 +788,11 @@ html {
         font-family: $oswald;
         font-size: 1.7rem;
         text-transform: uppercase;
+
+        // desktops
+        @media(min-width: 1024px) and (orientation: landscape) {
+            font-size: 2rem;
+        }
     }
 
     &__description {
@@ -788,6 +809,11 @@ html {
 
         &:nth-child(2) {
             background-image: url('../assets/img/pages/aktualnosci-front-1.jpg');
+
+            // desktops
+            @media(min-width: 1024px) and (orientation: landscape) {
+                margin-right: 2rem;
+            }
         }
 
         &:nth-child(3) {
@@ -807,6 +833,14 @@ html {
         // mobile landscape
         @media(orientation: landscape) {
             height: 80vh;
+        }
+
+        // desktops
+        @media(min-width: 1024px) and (orientation: landscape) {
+            max-height: 301px;
+            max-width: 582px;
+            height: 40vh;
+            flex-basis: 40%;
         }
     }
 
@@ -850,6 +884,14 @@ html {
             top: -2%;
             bottom: 85%;
             right: 90%;
+        }
+
+        // desktops
+        @media(min-width: 1024px) and (orientation: landscape) {
+            max-width: 93px;
+            max-height: 81px;
+            bottom: 75%;
+            right: 85%;
         }
     }
 
@@ -916,6 +958,12 @@ html {
         @media(min-width: 960px) and (orientation: landscape) {
             top: 70%;
         }
+
+        // desktops
+        @media(min-width: 1024px) and (orientation: landscape) {
+            max-height: 150px;
+            top: 50%;
+        }
     }
 
     &__item-header {
@@ -937,6 +985,13 @@ html {
         // mobile landscape
         @media(min-width: 850px) and (orientation: landscape) {
             font-size: 1.5rem;
+        }
+
+        // desktops
+        @media(min-width: 1024px) and (orientation: landscape) {
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+            font-size: 1.375rem;
         }
     }
 
@@ -960,6 +1015,11 @@ html {
         @media(min-width: 850px) and (orientation: landscape) {
             font-size: 1rem;
         }
+
+        // desktops
+        @media(min-width: 1024px) and (orientation: landscape) {
+            font-size: 0.75rem;
+        }
     }
 
     &__item-more {
@@ -970,6 +1030,12 @@ html {
         text-decoration: none;
         text-transform: uppercase;
 
+        &:hover {
+            @media(min-width: 1025px) and (orientation: landscape) {
+                text-decoration: underline;
+            }
+        }
+
         // mobile portrait
         @media(min-width: 480px) and (orientation: portrait) {
             font-size: 0.85rem;
@@ -978,6 +1044,11 @@ html {
         // mobile landscape
         @media(min-width: 850px) and (orientation: landscape) {
             font-size: 1rem;
+        }
+
+        // desktops
+        @media(min-width: 1024px) and (orientation: landscape) {
+            font-size: 0.75rem;
         }
     }
 }
