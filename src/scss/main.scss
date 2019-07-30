@@ -757,10 +757,10 @@ html {
     &__wrapper {
         padding: 2rem 1rem;
 
-        // // mobile portrait
-        // @media(min-width: 768px) and (orientation: portrait) {
-        //     padding: 2rem 8rem;
-        // }
+        // mobile landscape
+        @media(min-width: 850px) and (orientation: landscape) {
+            padding: 2rem;
+        }
     }
 
     &__intro {
@@ -799,10 +799,14 @@ html {
             height: 35vh;
         }
 
-        // mobile portrait
         @media(min-width: 768px) and (orientation: portrait) {
             margin-left: 8rem;
             margin-right: 8rem;
+        }
+
+        // mobile landscape
+        @media(orientation: landscape) {
+            height: 80vh;
         }
     }
 
@@ -827,15 +831,25 @@ html {
             right: 80%;
         }
 
-        // mobile portrait
         @media(min-width: 600px) and (orientation: portrait) {
             left: -1%;
             right: 85%;
         }
 
-        // mobile portrait
         @media(min-width: 768px) and (orientation: portrait) {
             left: -2%;
+        }
+
+        // mobile landscape
+        @media(orientation: landscape) {
+            left: -1%;
+            right: 80%;
+        }
+
+        @media(min-width: 850px) and (orientation: landscape) {
+            top: -2%;
+            bottom: 85%;
+            right: 90%;
         }
     }
 
@@ -878,14 +892,29 @@ html {
             top: 60%;
         }
 
-        // mobile portrait
         @media(min-width: 600px) and (orientation: portrait) {
             top: 50%;
         }
 
-        // mobile portrait
         @media(min-width: 800px) and (orientation: portrait) {
             top: 60%;
+        }
+
+        // mobile landscape
+        @media(orientation: landscape) {
+            top: 50%;
+        }
+
+        @media(min-width: 667px) and (orientation: landscape) {
+            top: 60%;
+        }
+
+        @media(min-width: 850px) and (orientation: landscape) {
+            padding: 0 2rem;
+        }
+
+        @media(min-width: 960px) and (orientation: landscape) {
+            top: 70%;
         }
     }
 
@@ -901,9 +930,13 @@ html {
             font-size: 1.5rem;
         }
 
-        // mobile portrait
-        @media(min-width: 480px) and (orientation: portrait) {
+        @media(min-width: 600px) and (orientation: portrait) {
             margin-top: 2rem;
+        }
+
+        // mobile landscape
+        @media(min-width: 850px) and (orientation: landscape) {
+            font-size: 1.5rem;
         }
     }
 
@@ -919,9 +952,13 @@ html {
             font-size: 0.85rem;
         }
 
-        // mobile portrait
-        @media(min-width: 480px) and (orientation: portrait) {
+        @media(min-width: 600px) and (orientation: portrait) {
             margin-bottom: 1rem;
+        }
+
+        // mobile landscape
+        @media(min-width: 850px) and (orientation: landscape) {
+            font-size: 1rem;
         }
     }
 
@@ -936,6 +973,11 @@ html {
         // mobile portrait
         @media(min-width: 480px) and (orientation: portrait) {
             font-size: 0.85rem;
+        }
+
+        // mobile landscape
+        @media(min-width: 850px) and (orientation: landscape) {
+            font-size: 1rem;
         }
     }
 }
