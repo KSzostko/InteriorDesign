@@ -800,6 +800,11 @@ html {
 
         &:nth-child(2) {
             background-image: url('../assets/img/pages/aktualnosci-front-1.jpg');
+
+            // desktops
+            @media(min-width: 1024px) and (orientation: landscape) {
+                margin-right: 3rem;
+            }
         }
 
         &:nth-child(3) {
@@ -819,6 +824,12 @@ html {
         // mobile landscape
         @media(orientation: landscape) {
             height: 80vh;
+        }
+
+        // desktops
+        @media(min-width: 1024px) and (orientation: landscape) {
+            height: 40vh;
+            flex-basis: 40%;
         }
     }
 
