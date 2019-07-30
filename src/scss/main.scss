@@ -1030,6 +1030,12 @@ html {
         text-decoration: none;
         text-transform: uppercase;
 
+        &:hover {
+            @media(min-width: 1025px) and (orientation: landscape) {
+                text-decoration: underline;
+            }
+        }
+
         // mobile portrait
         @media(min-width: 480px) and (orientation: portrait) {
             font-size: 0.85rem;
