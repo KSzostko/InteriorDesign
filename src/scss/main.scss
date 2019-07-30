@@ -752,8 +752,16 @@ html {
 
 // latest
 .latest {
-    padding: 2rem 1rem;
     background-color: $light-bgc;
+
+    &__wrapper {
+        padding: 2rem 1rem;
+
+        // mobile portrait
+        @media(min-width: 768px) and (orientation: portrait) {
+            padding: 2rem 8rem;
+        }
+    }
 
     &__intro {
         margin-bottom: 2rem;
@@ -817,6 +825,11 @@ html {
         @media(min-width: 600px) and (orientation: portrait) {
             left: -1%;
             right: 85%;
+        }
+
+        // mobile portrait
+        @media(min-width: 768px) and (orientation: portrait) {
+            left: -2%;
         }
     }
 
