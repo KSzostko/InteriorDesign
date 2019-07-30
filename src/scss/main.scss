@@ -772,6 +772,11 @@ html {
 
     &__intro {
         margin-bottom: 2rem;
+
+        // dekstops
+        @media(min-width: 1024px) and (orientation: landscape) {
+            flex-basis: 100%;
+        }
     }
 
     &__header {
