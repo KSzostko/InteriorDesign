@@ -761,6 +761,13 @@ html {
         @media(min-width: 850px) and (orientation: landscape) {
             padding: 2rem;
         }
+
+        // desktops
+        @media(min-width: 1024px) and (orientation: landscape) {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
     }
 
     &__intro {
