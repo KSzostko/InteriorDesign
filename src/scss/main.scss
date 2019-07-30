@@ -826,6 +826,11 @@ html {
         @media(min-width: 360px) and (orientation: portrait) {
             top: 55%;
         }
+
+        // Iphone X
+        @media(max-width: 376px) and (min-height: 812px) {
+            top: 60%;
+        }
     }
 
     &__item-header {
