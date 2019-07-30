@@ -459,11 +459,6 @@ html {
     &__wrapper {
         padding: 2rem 1rem;
 
-        // mobile portrait
-        @media(min-width: 768px) and (orientation: portrait) {
-            padding: 2rem 8rem;
-        }
-
         // mobile landscape
         @media(min-width: 730px) and (orientation: landscape) {
             padding: 2rem 8rem;
@@ -521,6 +516,12 @@ html {
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
+
+        // mobile portrait
+        @media(min-width: 768px) and (orientation: portrait) {
+            margin-left: 8rem;
+            margin-right: 8rem;
+        }
 
         // mobile landscape
         @media(orientation: landscape) {
@@ -617,7 +618,6 @@ html {
                 grid-area: image2;
             }
         }
-
 
         &--big {
             width: 99%;
@@ -752,8 +752,16 @@ html {
 
 // latest
 .latest {
-    padding: 2rem 1rem;
     background-color: $light-bgc;
+
+    &__wrapper {
+        padding: 2rem 1rem;
+
+        // // mobile portrait
+        // @media(min-width: 768px) and (orientation: portrait) {
+        //     padding: 2rem 8rem;
+        // }
+    }
 
     &__intro {
         margin-bottom: 2rem;
@@ -785,6 +793,17 @@ html {
         &:nth-child(3) {
             background-image: url('../assets/img/pages/aktualnosci-front-2.jpg');
         }
+
+        // mobile portrait
+        @media(min-width: 600px) and (orientation: portrait) {
+            height: 35vh;
+        }
+
+        // mobile portrait
+        @media(min-width: 768px) and (orientation: portrait) {
+            margin-left: 8rem;
+            margin-right: 8rem;
+        }
     }
 
     &__item-date {
@@ -800,6 +819,24 @@ html {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+
+        // mobile portrait
+        @media(min-width: 480px) and (orientation: portrait) {
+            top: -2%;
+            bottom: 82%;
+            right: 80%;
+        }
+
+        // mobile portrait
+        @media(min-width: 600px) and (orientation: portrait) {
+            left: -1%;
+            right: 85%;
+        }
+
+        // mobile portrait
+        @media(min-width: 768px) and (orientation: portrait) {
+            left: -2%;
+        }
     }
 
     &__date-image {
@@ -812,6 +849,11 @@ html {
         font-weight: 300;
         font-size: 0.65rem;
         text-transform: uppercase;
+
+        // mobile portrait
+        @media(min-width: 480px) and (orientation: portrait) {
+            font-size: 0.75rem;
+        }
     }
 
     &__item-info {
@@ -821,6 +863,30 @@ html {
         padding: 0 1rem;
         background-color: rgba(0, 0, 0, 0.5);
         color: #fff;
+
+        // mobile portrait
+        @media(min-width: 360px) and (orientation: portrait) {
+            top: 55%;
+        }
+
+        // Iphone X
+        @media(max-width: 376px) and (min-height: 812px) {
+            top: 60%;
+        }
+
+        @media(min-width: 410px) and (orientation: portrait) {
+            top: 60%;
+        }
+
+        // mobile portrait
+        @media(min-width: 600px) and (orientation: portrait) {
+            top: 50%;
+        }
+
+        // mobile portrait
+        @media(min-width: 800px) and (orientation: portrait) {
+            top: 60%;
+        }
     }
 
     &__item-header {
@@ -829,6 +895,16 @@ html {
         font-family: $oswald;
         font-size: 1.25rem;
         text-transform: uppercase;
+
+        // mobile portrait
+        @media(min-width: 480px) and (orientation: portrait) {
+            font-size: 1.5rem;
+        }
+
+        // mobile portrait
+        @media(min-width: 480px) and (orientation: portrait) {
+            margin-top: 2rem;
+        }
     }
 
     &__item-description {
@@ -837,6 +913,16 @@ html {
         font-family: $lato;
         font-size: 0.75rem;
         line-height: 1.5;
+
+        // mobile portrait
+        @media(min-width: 480px) and (orientation: portrait) {
+            font-size: 0.85rem;
+        }
+
+        // mobile portrait
+        @media(min-width: 480px) and (orientation: portrait) {
+            margin-bottom: 1rem;
+        }
     }
 
     &__item-more {
@@ -846,5 +932,10 @@ html {
         font-size: 0.75rem;
         text-decoration: none;
         text-transform: uppercase;
+
+        // mobile portrait
+        @media(min-width: 480px) and (orientation: portrait) {
+            font-size: 0.85rem;
+        }
     }
 }
