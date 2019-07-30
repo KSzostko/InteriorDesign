@@ -749,3 +749,103 @@ html {
         line-height: 1.5;
     }
 }
+
+// latest
+.latest {
+    padding: 2rem 1rem;
+    background-color: $light-bgc;
+
+    &__intro {
+        margin-bottom: 2rem;
+    }
+
+    &__header {
+        margin-bottom: 0.5rem;
+        font-family: $oswald;
+        font-size: 1.7rem;
+        text-transform: uppercase;
+    }
+
+    &__description {
+        margin-top: 0.5rem;
+        font-family: $lato;
+    }
+
+    &__item {
+        height: 50vh;
+        margin-bottom: 2rem;
+        position: relative;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        &:nth-child(2) {
+            background-image: url('../assets/img/pages/aktualnosci-front-1.jpg');
+        }
+
+        &:nth-child(3) {
+            background-image: url('../assets/img/pages/aktualnosci-front-2.jpg');
+        }
+    }
+
+    &__item-date {
+        position: absolute;
+        top: -5%;
+        bottom: 75%;
+        left: -2%;
+        right: 75%;
+        background-color: $brown;
+
+        // items inside
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__date-image {
+        margin-bottom: 0.5rem;
+    }
+
+    &__date-text {
+        font-family: $oswald;
+        color: #fff;
+        font-weight: 300;
+        font-size: 0.65rem;
+        text-transform: uppercase;
+    }
+
+    &__item-info {
+        position: absolute;
+        top: 40%;
+        bottom: 0;
+        padding: 0 1rem;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: #fff;
+        font-size: 0.5rem;
+    }
+
+    &__item-header {
+        margin-top: 1rem;
+        margin-bottom: 0.5rem;
+        font-family: $oswald;
+        font-size: 1.25rem;
+        text-transform: uppercase;
+    }
+
+    &__item-description {
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+        font-family: $lato;
+        font-size: 0.75rem;
+        line-height: 1.5;
+    }
+
+    &__item-more {
+        font-family: $oswald;
+        color: $brown;
+        font-weight: 300;
+        font-size: 0.75rem;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+}
