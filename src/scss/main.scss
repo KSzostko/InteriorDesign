@@ -1032,6 +1032,7 @@ html {
 
         &:hover {
             @media(min-width: 1025px) and (orientation: landscape) {
+                color: $brown-hover;
                 text-decoration: underline;
             }
         }
