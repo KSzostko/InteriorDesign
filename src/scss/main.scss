@@ -1064,7 +1064,7 @@ html {
     color: $text-gray;
 
     // desktops
-    @media(min-width: 1024px) and (orientation: landscape) {
+    @media(min-width: 1025px) and (orientation: landscape) {
         background-position-y: 20%;
     }
 
@@ -1095,7 +1095,7 @@ html {
         }
 
         // desktops
-        @media(min-width: 1024px) and (orientation: landscape) {
+        @media(min-width: 1025px) and (orientation: landscape) {
             max-width: 1520px;
             margin: 0 auto;
             padding: 4rem 10rem;
@@ -1177,6 +1177,14 @@ html {
         color: $text-gray;
         font-size: 0.75rem;
         text-decoration: none;
+
+        // desktops
+        &:hover {
+            @media(min-width: 1025px) and (orientation: landscape) {
+                color: $brown-hover;
+                text-decoration: underline;
+            }
+        }
     }
 
     &__contact {
@@ -1271,5 +1279,14 @@ html {
         font-weight: 300;
         font-size: 0.75rem;
         text-transform: uppercase;
+        transition: 0.5s;
+
+        // desktops
+        &:hover {
+            @media(min-width: 1025px) and (orientation: landscape) {
+                cursor: pointer;
+                background-color: $brown-hover;
+            }
+        }
     }
 }
