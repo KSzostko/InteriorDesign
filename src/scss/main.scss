@@ -1087,6 +1087,11 @@ html {
         justify-content: space-between;
     }
 
+    // desktops
+    @media(min-width: 1024px) and (orientation: landscape) {
+        padding: 2rem 10rem;
+    }
+
     &__header {
         font-family: $oswald;
         color: #fff;
