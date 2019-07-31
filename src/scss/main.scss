@@ -1056,7 +1056,6 @@ html {
 
 // more
 .more {
-    padding: 2rem 1rem;
     background-image: url('../assets/img/bg/footer-bg.jpg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -1064,27 +1063,43 @@ html {
     background-blend-mode: darken;
     color: $text-gray;
 
-    // mobile portrait
-    @media(min-width: 410px) and (orientation: portrait) {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: center;
+    // desktops
+    @media(min-width: 1025px) and (orientation: landscape) {
+        background-position-y: 20%;
     }
 
-    @media(min-width: 600px) and (orientation: portrait) {
-        justify-content: center;
-    }
+    &__wrapper {
+        padding: 2rem 1rem;
 
-    @media(min-width: 768px) and (orientation: portrait) {
-        padding: 2rem 8rem;
-    }
+        // mobile portrait
+        @media(min-width: 410px) and (orientation: portrait) {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+        }
 
-    // mobile landscape
-    @media(orientation: landscape) {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
+        @media(min-width: 600px) and (orientation: portrait) {
+            justify-content: center;
+        }
+
+        @media(min-width: 768px) and (orientation: portrait) {
+            padding: 2rem 8rem;
+        }
+
+        // mobile landscape
+        @media(orientation: landscape) {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        // desktops
+        @media(min-width: 1025px) and (orientation: landscape) {
+            max-width: 1520px;
+            margin: 0 auto;
+            padding: 4rem 10rem;
+        }
     }
 
     &__header {
@@ -1162,6 +1177,14 @@ html {
         color: $text-gray;
         font-size: 0.75rem;
         text-decoration: none;
+
+        // desktops
+        &:hover {
+            @media(min-width: 1025px) and (orientation: landscape) {
+                color: $brown-hover;
+                text-decoration: underline;
+            }
+        }
     }
 
     &__contact {
@@ -1256,5 +1279,14 @@ html {
         font-weight: 300;
         font-size: 0.75rem;
         text-transform: uppercase;
+        transition: 0.5s;
+
+        // desktops
+        &:hover {
+            @media(min-width: 1025px) and (orientation: landscape) {
+                cursor: pointer;
+                background-color: $brown-hover;
+            }
+        }
     }
 }
