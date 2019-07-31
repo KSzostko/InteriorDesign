@@ -1064,6 +1064,14 @@ html {
     background-blend-mode: darken;
     color: $text-gray;
 
+    // mobile portrait
+    @media(min-width: 410px) and (orientation: portrait) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
     &__header {
         font-family: $oswald;
         color: #fff;
@@ -1072,6 +1080,11 @@ html {
 
     &__about {
         margin-bottom: 4rem;
+
+        // mobile portrait
+        @media(min-width: 410px) and (orientation: portrait) {
+            margin-bottom: 1rem;
+        }
     }
 
     &__about-content {
@@ -1082,6 +1095,11 @@ html {
 
     &__help {
         margin-bottom: 4rem;
+
+        // mobile portrait
+        @media(min-width: 410px) and (orientation: portrait) {
+            margin-bottom: 1rem;
+        }
     }
 
     &__help-list {
@@ -1102,6 +1120,11 @@ html {
 
     &__contact {
         margin-bottom: 4rem;
+
+        // mobile portrait
+        @media(min-width: 410px) and (orientation: portrait) {
+            margin-bottom: 1rem;
+        }
     }
 
     &__contact-list {
