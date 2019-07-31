@@ -1072,6 +1072,10 @@ html {
         align-items: center;
     }
 
+    @media(min-width: 600px) and (orientation: portrait) {
+        justify-content: center;
+    }
+
     &__header {
         font-family: $oswald;
         color: #fff;
@@ -1084,6 +1088,11 @@ html {
         // mobile portrait
         @media(min-width: 410px) and (orientation: portrait) {
             margin-bottom: 1rem;
+        }
+
+        @media(min-width: 600px) and (orientation: portrait) {
+            flex-basis: 45%;
+            margin-right: 2rem;
         }
     }
 
@@ -1099,6 +1108,10 @@ html {
         // mobile portrait
         @media(min-width: 410px) and (orientation: portrait) {
             margin-bottom: 1rem;
+        }
+
+        @media(min-width: 600px) and (orientation: portrait) {
+            flex-basis: 45%;
         }
     }
 
@@ -1124,6 +1137,11 @@ html {
         // mobile portrait
         @media(min-width: 410px) and (orientation: portrait) {
             margin-bottom: 1rem;
+        }
+
+        @media(min-width: 600px) and (orientation: portrait) {
+            flex-basis: 45%;
+            margin-right: 2rem;
         }
     }
 
@@ -1156,6 +1174,14 @@ html {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+    }
+
+    &__newsletter {
+
+        // mobile portrait
+        @media(min-width: 600px) and (orientation: portrait) {
+            flex-basis: 45%;
+        }
     }
 
     &__newsletter-label {
