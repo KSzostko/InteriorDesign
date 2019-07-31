@@ -1056,7 +1056,6 @@ html {
 
 // more
 .more {
-    padding: 2rem 1rem;
     background-image: url('../assets/img/bg/footer-bg.jpg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -1064,32 +1063,43 @@ html {
     background-blend-mode: darken;
     color: $text-gray;
 
-    // mobile portrait
-    @media(min-width: 410px) and (orientation: portrait) {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    @media(min-width: 600px) and (orientation: portrait) {
-        justify-content: center;
-    }
-
-    @media(min-width: 768px) and (orientation: portrait) {
-        padding: 2rem 8rem;
-    }
-
-    // mobile landscape
-    @media(orientation: landscape) {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-
     // desktops
     @media(min-width: 1024px) and (orientation: landscape) {
-        padding: 2rem 10rem;
+        background-position-y: 20%;
+    }
+
+    &__wrapper {
+        padding: 2rem 1rem;
+
+        // mobile portrait
+        @media(min-width: 410px) and (orientation: portrait) {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        @media(min-width: 600px) and (orientation: portrait) {
+            justify-content: center;
+        }
+
+        @media(min-width: 768px) and (orientation: portrait) {
+            padding: 2rem 8rem;
+        }
+
+        // mobile landscape
+        @media(orientation: landscape) {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        // desktops
+        @media(min-width: 1024px) and (orientation: landscape) {
+            max-width: 1520px;
+            margin: 0 auto;
+            padding: 2rem 10rem;
+        }
     }
 
     &__header {
