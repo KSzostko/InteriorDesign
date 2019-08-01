@@ -1290,3 +1290,12 @@ html {
         }
     }
 }
+
+// main-footer
+.main-footer {
+    padding: 1.5rem 0;
+    display: flex;
+    justify-content: center;
+    font-family: $lato;
+    font-size: 0.75rem;
+}
