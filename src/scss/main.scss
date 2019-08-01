@@ -1320,6 +1320,9 @@ html {
 
     // desktops
     @media(min-width: 1025px) and (orientation: landscape) {
+        max-width: 1520px;
+        margin: 0 auto;
+        padding-top: 6rem;
         display: flex;
         justify-content: center;
     }
