@@ -1299,3 +1299,55 @@ html {
     font-family: $lato;
     font-size: 0.75rem;
 }
+
+// contact
+.contact {
+    padding: 4rem 1rem 2rem 1rem;
+
+    &__write {
+        margin-bottom: 3rem;
+        margin-left: 1rem;
+        background-image: url('../assets/img/bg/contact-form-bg.jpg');
+        background-size: cover;
+        background-position: center;
+        box-shadow: -1.3rem -1.3rem 0 $shadow-form;
+    }
+
+    &__form {
+        padding: 2rem;
+        color: #fff;
+        text-transform: uppercase;
+    }
+
+    &__header {
+        font-family: $oswald;
+        letter-spacing: 0.05rem;
+    }
+
+    &__label {
+        font-family: $lato;
+        font-size: 0.625rem;
+    }
+
+    &__input {
+        width: 100%;
+        margin-top: 0.25rem;
+        padding: 0.25rem;
+        border-style: none;
+        background-color: $contact-input;
+    }
+
+    &__button {
+        padding: 0.375rem 1rem;
+        background-color: $brown;
+        border-style: none;
+        font-family: $lato;
+        color: #fff;
+        font-size: 0.75rem;
+        text-transform: uppercase;
+    }
+
+    &__image {
+        width: 100%;
+    }
+}
