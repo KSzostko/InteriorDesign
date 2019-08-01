@@ -1318,6 +1318,12 @@ html {
         padding: 4rem 6rem 2rem 6rem;
     }
 
+    // desktops
+    @media(min-width: 1025px) and (orientation: landscape) {
+        display: flex;
+        justify-content: center;
+    }
+
     &__write {
         margin-bottom: 3rem;
         margin-left: 1rem;
@@ -1325,6 +1331,12 @@ html {
         background-size: cover;
         background-position: center;
         box-shadow: -1.3rem -1.3rem 0 $shadow-form;
+
+        // desktops
+        @media(min-width: 1025px) and (orientation: landscape) {
+            flex-basis: 45%;
+            margin-right: 4rem;
+        }
     }
 
     &__form {
@@ -1418,5 +1430,11 @@ html {
 
     &__image {
         width: 100%;
+
+        // desktops
+        @media(min-width: 1025px) and (orientation: landscape) {
+            height: 30%;
+            flex-basis: 30%;
+        }
     }
 }
