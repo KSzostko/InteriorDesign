@@ -1450,3 +1450,102 @@ html {
         }
     }
 }
+
+// about
+.about {
+    padding: 4rem 1rem 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-family: $lato;
+
+    &__intro {
+        margin-bottom: 2rem;
+    }
+
+    &__subheader {
+        color: $light-gray;
+        font-weight: 300;
+        font-size: 0.8rem;
+        letter-spacing: 0.05rem;
+        text-transform: uppercase;
+
+        // mobile portrait
+        @media(min-width: 768px) and (orientation: portrait) {
+            font-size: 1rem;
+        }
+    }
+
+    &__header {
+        margin-top: 0.25rem;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid $light-gray;
+        font-family: $oswald;
+        font-size: 1.7rem;
+        font-weight: 700;
+        text-transform: uppercase;
+
+        // mobile portrait
+        @media(min-width: 768px) and (orientation: portrait) {
+            font-size: 3rem;
+        }
+
+        // desktops
+        @media(min-width: 1054px) and (orientation: landscape) {
+            font-size: 2.5rem;
+        }
+    }
+
+    &__our-company {
+        color: $brown;
+        font-style: normal;
+    }
+
+    &__description {
+        line-height: 1.5;
+
+        // mobile portrait
+        @media(min-width: 768px) and (orientation: portrait) {
+            font-size: 1.25rem;
+        }
+    }
+
+    &__image {
+        width: 100%;
+        margin-bottom: 4rem;
+    }
+
+    &__staff {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    &__member {
+        flex-basis: 45%;
+        margin-bottom: 2rem;
+
+        // content inside
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    &__member-photo {
+        margin-bottom: 1rem;
+    }
+
+    &__member-job {
+        font-family: $lato;
+        font-size: 0.5rem;
+        text-transform: uppercase;
+    }
+
+    &__member-name {
+        font-family: $oswald;
+        color: $brown;
+        letter-spacing: 0.1rem;
+        text-transform: uppercase;
+    }
+}
