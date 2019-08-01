@@ -1429,6 +1429,15 @@ html {
         color: #fff;
         font-size: 0.75rem;
         text-transform: uppercase;
+        transition: 0.5s;
+
+        // desktops
+        &:hover {
+            @media(min-width: 1025px) and (orientation: landscape) {
+                cursor: pointer;
+                background-color: $brown-hover;
+            }
+        }
     }
 
     &__image {
