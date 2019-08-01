@@ -1304,6 +1304,16 @@ html {
 .contact {
     padding: 4rem 1rem 2rem 1rem;
 
+    // mobile portrait
+    @media(min-width: 600px) and (orientation: portrait) {
+        padding: 4rem 2rem 2rem 2rem;
+    }
+
+    // mobile portrait
+    @media(min-width: 768px) and (orientation: portrait) {
+        padding: 4rem 6rem 2rem 6rem;
+    }
+
     &__write {
         margin-bottom: 3rem;
         margin-left: 1rem;
@@ -1317,12 +1327,42 @@ html {
         padding: 2rem;
         color: #fff;
         text-transform: uppercase;
+
+        // mobile portrait
+        @media(min-width: 480px) and (orientation: portrait) {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
     }
 
     &__header {
         margin-top: 0;
         font-family: $oswald;
         letter-spacing: 0.05rem;
+
+        // mobile portrait
+        @media(min-width: 480px) and (orientation: portrait) {
+            flex-basis: 100%;
+            margin-bottom: 0;
+        }
+    }
+
+    &__field {
+
+        // mobile portrait
+        @media(min-width: 480px) and (orientation: portrait) {
+            flex-basis: 45%;
+        }
+
+        &--big {
+
+            // mobile portrait
+            @media(min-width: 480px) and (orientation: portrait) {
+                flex-basis: 100%;
+                margin-top: 0;
+            }
+        }
     }
 
     &__label {
