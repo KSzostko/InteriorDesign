@@ -1309,6 +1309,11 @@ html {
         padding: 4rem 2rem 2rem 2rem;
     }
 
+    // mobile portrait
+    @media(min-width: 768px) and (orientation: portrait) {
+        padding: 4rem 6rem 2rem 6rem;
+    }
+
     &__write {
         margin-bottom: 3rem;
         margin-left: 1rem;
