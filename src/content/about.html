@@ -22,9 +22,9 @@
             <li class="navigation__item"><a class="navigation__link" href="#">Usługi</a></li>
             <li class="navigation__item"><a class="navigation__link" href="#">Aktualności</a></li>
             <li class="navigation__item"><a class="navigation__link" href="#">Sklep</a></li>
-            <li class="navigation__item"><a class="navigation__link" href="about.html">O nas</a></li>
+            <li class="navigation__item"><a class="navigation__link navigation__link--active" href="#">O nas</a></li>
             <li class="navigation__item">
-                <a class="navigation__link navigation__link--active" href="contact.html">Kontakt</a></li>
+                <a class="navigation__link" href="contact.html">Kontakt</a></li>
             <li class="navigation__item">
                 <a class="navigation__link" href="#"><i class=" navigation__icon fas fa-shopping-basket"></i></a>
             </li>
@@ -40,26 +40,33 @@
     </header>
 
     <main>
-        <section class="contact">
-            <div class="contact__write">
-                <form class="contact__form" action="#">
-                    <h4 class="contact__header">Formularz kontaktowy</h4>
-                    <p class="contact__field">
-                        <label class="contact__label" for="name">Imię i nazwisko</label>
-                        <input class="contact__input" id="name" type="text">
-                    </p>
-                    <p class="contact__field">
-                        <label class="contact__label" for="email" required>Adres email</label>
-                        <input class="contact__input" id="email" type="email" required>
-                    </p>
-                    <p class="contact__field contact__field--big">
-                        <label class="contact__label" for="message">Treść wiadomości</label>
-                        <textarea class="contact__input" name="message" id="message" rows="4"></textarea>
-                    </p>
-                    <button class="contact__button">Wyślij wiadomość</button>
-                </form>
+        <section class="welcome">
+            <div class="welcome__intro">
+                <span class="welcome__subheader">Lorem ipsum dolor sit</span>
+                <h2 class="welcome__header">Witaj na <em class="welcome__our-site">naszej stronie</em></h2>
+                <p class="welcome__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora non laboriosam vero, dolorum, a vel quod dolore molestias veritatis nostrum quasi aspernatur natus dolores consequuntur voluptate provident quo in eveniet sed? Iste, quo, explicabo sequi molestias adipisci dicta id facere dolorum, doloribus ad labore omnis optio repudiandae enim accusamus? Esse, error ipsum minima dolorum et laborum! Voluptate repudiandae unde soluta?</p>
             </div>
-            <img class="contact__image" src="../assets/img/pages/mapa.jpg" alt="nasza lokalizacja">
+            <div class="welcome__services">
+                <a class="welcome__service welcome__service--active" href="#">
+                    <img class="welcome__service-image welcome__service-image--active"
+                        src="../assets/img/projekt-wnetrz-ikona.png" alt="wnętrze">
+                    <span class="welcome__service-name">Projektowanie wnętrz</span>
+                </a>
+                <a class="welcome__service" href="#">
+                    <img class="welcome__service-image" src="../assets/img/projekt-mebli-ikona.png"
+                        alt="meble">
+                    <span class="welcome__service-name">Projektowanie mebli</span>
+                </a>
+                <a class="welcome__service" href="#">
+                    <img class="welcome__service-image" src="../assets/img/projekt-zielen-ikona.png" alt="zieleń">
+                    <span class="welcome__service-name">Projektowanie zieleni</span>
+                </a>
+                <a class="welcome__service" href="#">
+                    <img class="welcome__service-image" src="../assets/img/projekt-lokale-ikona.png" alt="lokale">
+                    <span class="welcome__service-name">Lokale użytkowe</span>
+                </a>
+            </div>
+            <img class="welcome__image" src="../assets/img/pages/front-page-welcome.png" alt="wystrój">
         </section>
     </main>
 
