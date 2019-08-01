@@ -1334,6 +1334,13 @@ html {
             flex-wrap: wrap;
             justify-content: space-between;
         }
+
+        // mobile landscape
+        @media(min-width: 533px) and (orientation: landscape) {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
     }
 
     &__header {
@@ -1346,6 +1353,12 @@ html {
             flex-basis: 100%;
             margin-bottom: 0;
         }
+
+        // mobile landscape
+        @media(min-width: 533px) and (orientation: landscape) {
+            flex-basis: 100%;
+            margin-bottom: 0;
+        }
     }
 
     &__field {
@@ -1355,10 +1368,21 @@ html {
             flex-basis: 45%;
         }
 
+        // mobile landscape
+        @media(min-width: 533px) and (orientation: landscape) {
+            flex-basis: 45%;
+        }
+
         &--big {
 
             // mobile portrait
             @media(min-width: 480px) and (orientation: portrait) {
+                flex-basis: 100%;
+                margin-top: 0;
+            }
+
+            // mobile landscape
+            @media(min-width: 533px) and (orientation: landscape) {
                 flex-basis: 100%;
                 margin-top: 0;
             }
