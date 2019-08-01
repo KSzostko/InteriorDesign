@@ -1309,8 +1309,12 @@ html {
         padding: 4rem 2rem 2rem 2rem;
     }
 
-    // mobile portrait
     @media(min-width: 768px) and (orientation: portrait) {
+        padding: 4rem 6rem 2rem 6rem;
+    }
+
+    // mobile landscape
+    @media(min-width: 812px) and (orientation: landscape) {
         padding: 4rem 6rem 2rem 6rem;
     }
 
