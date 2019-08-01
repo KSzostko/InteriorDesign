@@ -1304,6 +1304,11 @@ html {
 .contact {
     padding: 4rem 1rem 2rem 1rem;
 
+    // mobile portrait
+    @media(min-width: 600px) and (orientation: portrait) {
+        padding: 4rem 2rem 2rem 2rem;
+    }
+
     &__write {
         margin-bottom: 3rem;
         margin-left: 1rem;
