@@ -1524,6 +1524,11 @@ html {
         @media(min-width: 480px) and (orientation: portrait) {
             justify-content: space-around;
         }
+
+        // mobile landscape
+        @media(min-width: 533px) and (orientation: landscape) {
+            justify-content: space-around;
+        }
     }
 
     &__member {
@@ -1538,6 +1543,11 @@ html {
 
         // mobile portrait
         @media(min-width: 480px) and (orientation: portrait) {
+            flex-basis: 30%;
+        }
+
+        // mobile landscape
+        @media(min-width: 533px) and (orientation: landscape) {
             flex-basis: 30%;
         }
     }
