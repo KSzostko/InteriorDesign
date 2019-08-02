@@ -1461,6 +1461,8 @@ html {
 
     // desktops
     @media(min-width: 1025px) and (orientation: landscape) {
+        max-width: 1520px;
+        margin: 0 auto;
         padding: 4rem 10rem 2rem 10rem;
         flex-direction: row;
         justify-content: space-between;
