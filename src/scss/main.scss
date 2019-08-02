@@ -1529,6 +1529,10 @@ html {
         @media(min-width: 533px) and (orientation: landscape) {
             justify-content: space-around;
         }
+
+        @media(min-width: 812px) and (orientation: landscape) {
+            justify-content: space-between;
+        }
     }
 
     &__member {
