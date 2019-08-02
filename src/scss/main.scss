@@ -1459,8 +1459,23 @@ html {
     flex-wrap: wrap;
     font-family: $lato;
 
+    // desktops
+    @media(min-width: 1025px) and (orientation: landscape) {
+        max-width: 1520px;
+        margin: 0 auto;
+        padding: 4rem 10rem 2rem 10rem;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
     &__intro {
         margin-bottom: 2rem;
+
+        // desktops
+        @media(min-width: 1025px) and (orientation: landscape) {
+            flex-basis: 45%;
+        }
     }
 
     &__subheader {
@@ -1513,6 +1528,12 @@ html {
     &__image {
         width: 100%;
         margin-bottom: 4rem;
+
+        // desktops
+        @media(min-width: 1025px) and (orientation: landscape) {
+            height: 50%;
+            width: 50%;
+        }
     }
 
     &__staff {
@@ -1532,6 +1553,11 @@ html {
 
         @media(min-width: 812px) and (orientation: landscape) {
             justify-content: space-between;
+        }
+
+        // desktops
+        @media(min-width: 1025px) and (orientation: landscape) {
+            flex-basis: 100%;
         }
     }
 
