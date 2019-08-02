@@ -1519,6 +1519,11 @@ html {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+
+        // mobile portrait
+        @media(min-width: 480px) and (orientation: portrait) {
+            justify-content: space-around;
+        }
     }
 
     &__member {
@@ -1531,6 +1536,7 @@ html {
         flex-wrap: wrap;
         align-items: center;
 
+        // mobile portrait
         @media(min-width: 480px) and (orientation: portrait) {
             flex-basis: 30%;
         }
