@@ -1530,6 +1530,10 @@ html {
         flex-direction: column;
         flex-wrap: wrap;
         align-items: center;
+
+        @media(min-width: 480px) and (orientation: portrait) {
+            flex-basis: 30%;
+        }
     }
 
     &__member-photo {
