@@ -1300,7 +1300,7 @@ html {
     font-size: 0.75rem;
 }
 
-// contact
+// contact (contact.html)
 .contact {
     padding: 4rem 1rem 2rem 1rem;
 
@@ -1451,7 +1451,7 @@ html {
     }
 }
 
-// about
+// about (about.html)
 .about {
     padding: 4rem 1rem 2rem 1rem;
     display: flex;
@@ -1601,5 +1601,167 @@ html {
         color: $brown;
         letter-spacing: 0.1rem;
         text-transform: uppercase;
+    }
+}
+
+// realizations (portfolio.html)
+.realizations {
+    padding: 2rem 1rem;
+
+    // desktops
+    @media(min-width: 1025px) and (orientation: landscape) {
+        max-width: 1520px;
+        margin: 0 auto;
+    }
+
+    &__types {
+        margin-bottom: 2rem;
+        padding: 0 1rem;
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        // mobile portrait
+        @media(min-width: 480px) and (orientation: portrait) {
+            padding: 0 4rem;
+        }
+    }
+
+    &__link {
+        display: block;
+        padding: 0.5rem 0.75rem;
+        font-family: $oswald;
+        color: #000;
+        text-decoration: none;
+        text-transform: uppercase;
+
+        &--main {
+            background-color: $brown;
+            color: #fff;
+        }
+    }
+
+    &__gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    &__gallery-item {
+        width: 100%;
+        height: 42vh;
+        max-width: 349px;
+        max-height: 276px;
+        margin-bottom: 2rem;
+        background-image: url('../assets/img/portfolio/portfolio-2.jpg');
+        background-size: cover;
+
+        // mobile portrait
+        @media(min-width: 768px) and (orientation: portrait) {
+            flex-basis: 48%;
+            margin-right: 0.5rem;
+        }
+
+        // mobile landscape
+        @media(orientation: landscape) {
+            height: 90vh;
+        }
+
+        @media(min-width: 730px) and (orientation: landscape) {
+            margin-right: 0.5rem;
+        }
+
+        // desktops
+        @media(min-width: 1025px) and (orientation: landscape) {
+            margin-left: 1rem;
+            margin-right: 1rem;
+        }
+    }
+
+    &__gallery-image {
+        width: 100%;
+        max-width: 349px;
+        max-height: 276px;
+        margin-bottom: 2rem;
+
+        // mobile portrait
+        @media(min-width: 768px) and (orientation: portrait) {
+            flex-basis: 48%;
+            margin-left: 0.5rem;
+            margin-right: 0.5rem;
+        }
+
+        @media(min-width: 730px) and (orientation: landscape) {
+            margin-left: 0.5rem;
+            margin-right: 0.5rem;
+        }
+
+        // desktops
+        @media(min-width: 1025px) and (orientation: landscape) {
+            margin-left: 1rem;
+            margin-right: 1rem;
+        }
+    }
+
+    &__newest {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+        background-color: rgba(190, 140, 107, 0.7);
+        font-family: $oswald;
+        color: #fff;
+    }
+
+    &__newest-header {
+        margin-bottom: 1rem;
+        font-size: 1.25rem;
+        letter-spacing: 0.05rem;
+        text-transform: uppercase;
+    }
+
+    &__newest-info {
+        display: block;
+        margin-top: 0.25rem;
+        font-size: 0.875rem;
+        font-weight: 300;
+
+        &--first {
+            padding-top: 1rem;
+            border-top: 1px solid #fff;
+        }
+    }
+
+    &__pages {
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        list-style: none;
+    }
+
+    &__pages-link {
+        display: block;
+
+        font-family: $oswald;
+        font-weight: 300;
+        text-decoration: none;
+
+        &--next {
+            padding-left: 0.5rem;
+            color: #000;
+        }
+
+        &--previous {
+            padding-right: 0.5rem;
+            color: $light-gray;
+
+            // desktops
+            @media(min-width: 1025px) and (orientation: landscape) {
+                cursor: default;
+            }
+        }
     }
 }
