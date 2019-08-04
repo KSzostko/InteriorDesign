@@ -1656,6 +1656,11 @@ html {
             flex-basis: 48%;
             margin-right: 0.5rem;
         }
+
+        // mobile landscape
+        @media(orientation: landscape) {
+            height: 90vh;
+        }
     }
 
     &__gallery-image {
