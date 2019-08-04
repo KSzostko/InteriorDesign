@@ -1608,6 +1608,12 @@ html {
 .realizations {
     padding: 2rem 1rem;
 
+    // desktops
+    @media(min-width: 1025px) and (orientation: landscape) {
+        max-width: 1520px;
+        margin: 0 auto;
+    }
+
     &__types {
         margin-bottom: 2rem;
         padding: 0 1rem;
@@ -1665,6 +1671,12 @@ html {
         @media(min-width: 730px) and (orientation: landscape) {
             margin-right: 0.5rem;
         }
+
+        // desktops
+        @media(min-width: 1025px) and (orientation: landscape) {
+            margin-left: 1rem;
+            margin-right: 1rem;
+        }
     }
 
     &__gallery-image {
@@ -1683,6 +1695,12 @@ html {
         @media(min-width: 730px) and (orientation: landscape) {
             margin-left: 0.5rem;
             margin-right: 0.5rem;
+        }
+
+        // desktops
+        @media(min-width: 1025px) and (orientation: landscape) {
+            margin-left: 1rem;
+            margin-right: 1rem;
         }
     }
 
@@ -1739,6 +1757,11 @@ html {
         &--previous {
             padding-right: 0.5rem;
             color: $light-gray;
+
+            // desktops
+            @media(min-width: 1025px) and (orientation: landscape) {
+                cursor: default;
+            }
         }
     }
 }
