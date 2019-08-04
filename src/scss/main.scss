@@ -1656,6 +1656,15 @@ html {
             flex-basis: 48%;
             margin-right: 0.5rem;
         }
+
+        // mobile landscape
+        @media(orientation: landscape) {
+            height: 90vh;
+        }
+
+        @media(min-width: 730px) and (orientation: landscape) {
+            margin-right: 0.5rem;
+        }
     }
 
     &__gallery-image {
@@ -1667,6 +1676,11 @@ html {
         // mobile portrait
         @media(min-width: 768px) and (orientation: portrait) {
             flex-basis: 48%;
+            margin-left: 0.5rem;
+            margin-right: 0.5rem;
+        }
+
+        @media(min-width: 730px) and (orientation: landscape) {
             margin-left: 0.5rem;
             margin-right: 0.5rem;
         }
