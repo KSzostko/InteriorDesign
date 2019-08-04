@@ -1615,6 +1615,11 @@ html {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+
+        // mobile portrait
+        @media(min-width: 480px) and (orientation: portrait) {
+            padding: 0 4rem;
+        }
     }
 
     &__link {
