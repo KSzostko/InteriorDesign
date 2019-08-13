@@ -1777,6 +1777,12 @@ html {
     font-family: $lato;
     text-align: center;
 
+    // mobile portrait
+    @media(min-width: 400px) and (orientation: portrait) {
+        max-width: 320px;
+        margin: 3rem auto;
+    }
+
     &__subheader {
         color: $light-gray;
         font-weight: 300;
@@ -1792,6 +1798,7 @@ html {
 
     &__header {
         margin-top: 0.25rem;
+        margin-bottom: 1rem;
         padding-bottom: 1rem;
         border-bottom: 1px solid $light-gray;
         font-family: $oswald;
@@ -1801,7 +1808,7 @@ html {
 
         // mobile portrait
         @media(min-width: 768px) and (orientation: portrait) {
-            font-size: 3rem;
+            font-size: 2.5rem;
         }
 
         // desktops
@@ -1817,10 +1824,5 @@ html {
 
     &__content {
         line-height: 1.5;
-
-        // mobile portrait
-        @media(min-width: 768px) and (orientation: portrait) {
-            font-size: 1.25rem;
-        }
     }
 }
