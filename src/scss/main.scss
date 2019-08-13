@@ -1752,6 +1752,10 @@ html {
         &--next {
             padding-left: 0.5rem;
             color: #000;
+
+            &:hover {
+                color: $brown;
+            }
         }
 
         &--previous {
