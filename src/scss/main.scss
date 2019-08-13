@@ -318,6 +318,7 @@ html {
     }
 
     &__subheader {
+        // later add mixin for that
         color: $light-gray;
         font-weight: 300;
         font-size: 0.8rem;
@@ -1766,6 +1767,60 @@ html {
             @media(min-width: 1025px) and (orientation: landscape) {
                 cursor: default;
             }
+        }
+    }
+}
+
+// shop-intro (shop.html)
+.shop-intro {
+    margin: 3rem 1rem;
+    font-family: $lato;
+    text-align: center;
+
+    &__subheader {
+        color: $light-gray;
+        font-weight: 300;
+        font-size: 0.7rem;
+        letter-spacing: 0.05rem;
+        text-transform: uppercase;
+
+        // mobile portrait
+        @media(min-width: 768px) and (orientation: portrait) {
+            font-size: 0.8rem;
+        }
+    }
+
+    &__header {
+        margin-top: 0.25rem;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid $light-gray;
+        font-family: $oswald;
+        font-size: 1.7rem;
+        font-weight: 700;
+        text-transform: uppercase;
+
+        // mobile portrait
+        @media(min-width: 768px) and (orientation: portrait) {
+            font-size: 3rem;
+        }
+
+        // desktops
+        @media(min-width: 1054px) and (orientation: landscape) {
+            font-size: 2.5rem;
+        }
+    }
+
+    &__online {
+        color: $brown;
+        font-style: normal;
+    }
+
+    &__content {
+        line-height: 1.5;
+
+        // mobile portrait
+        @media(min-width: 768px) and (orientation: portrait) {
+            font-size: 1.25rem;
         }
     }
 }
