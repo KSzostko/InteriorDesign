@@ -23,16 +23,16 @@ html {
     z-index: 1;
 
     // mobile landscape
-    @media(orientation: landscape) {
+    @media (orientation: landscape) {
         height: 10vh;
     }
 
-    @media(min-width: 730px) and (orientation: landscape) {
+    @media (min-width: 730px) and (orientation: landscape) {
         padding: 0;
     }
 
     // desktops
-    @media(min-width: 1024px) and (orientation: landscape) {
+    @media (min-width: 1024px) and (orientation: landscape) {
         height: 8vh;
     }
 
@@ -48,7 +48,7 @@ html {
         transition: 0.5s;
 
         // mobile landscape
-        @media(min-width: 730px) and (orientation: landscape) {
+        @media (min-width: 730px) and (orientation: landscape) {
             top: 0;
             padding: 0;
             height: 10vh;
@@ -57,7 +57,7 @@ html {
         }
 
         // desktops
-        @media(min-width: 1024px) and (orientation: landscape) {
+        @media (min-width: 1024px) and (orientation: landscape) {
             height: 8vh;
         }
 
@@ -65,47 +65,47 @@ html {
             height: 80vw;
 
             // mobile portrait
-            @media(min-width: 360px) and (orientation: portrait) {
+            @media (min-width: 360px) and (orientation: portrait) {
                 height: 72vw;
             }
 
-            @media(min-width: 410px) and (orientation: portrait) {
+            @media (min-width: 410px) and (orientation: portrait) {
                 height: 65vw;
             }
 
-            @media(min-width: 480px) and (orientation: portrait) {
+            @media (min-width: 480px) and (orientation: portrait) {
                 height: 55vw;
             }
 
-            @media(min-width: 600px) and (orientation: portrait) {
+            @media (min-width: 600px) and (orientation: portrait) {
                 height: 50vw;
             }
 
-            @media(min-width: 900px) and (orientation: portrait) {
+            @media (min-width: 900px) and (orientation: portrait) {
                 height: 42vw;
             }
 
             // mobile landscape
-            @media(orientation: landscape) {
+            @media (orientation: landscape) {
                 height: 80vh;
             }
 
-            @media(min-width: 640px) and (orientation: landscape) {
+            @media (min-width: 640px) and (orientation: landscape) {
                 height: 75vh;
             }
         }
     }
 
     &__item {
-        margin-bottom: .5rem;
+        margin-bottom: 0.5rem;
 
         // mobile portrait
-        @media(min-width: 768px) and (orientation: portrait) {
-            margin-bottom: .75rem;
+        @media (min-width: 768px) and (orientation: portrait) {
+            margin-bottom: 0.75rem;
         }
 
         // mobile landscape
-        @media(min-width: 730px) and (orientation: landscape) {
+        @media (min-width: 730px) and (orientation: landscape) {
             margin: 0;
         }
     }
@@ -117,16 +117,16 @@ html {
         text-transform: uppercase;
 
         // mobile portrait
-        @media(min-width: 600px) and (orientation: portrait) {
+        @media (min-width: 600px) and (orientation: portrait) {
             font-size: 1.25rem;
         }
 
-        @media(min-width: 768px) and (orientation: portrait) {
+        @media (min-width: 768px) and (orientation: portrait) {
             font-size: 1.5rem;
         }
 
         // mobile landscape
-        @media(min-width: 730px) and (orientation: landscape) {
+        @media (min-width: 730px) and (orientation: landscape) {
             display: block;
             height: 10vh;
             padding: 1rem 0.75rem;
@@ -135,7 +135,7 @@ html {
         }
 
         // desktops
-        @media(min-width: 1024px) and (orientation: landscape) {
+        @media (min-width: 1024px) and (orientation: landscape) {
             height: 8vh;
             display: flex;
             align-items: center;
@@ -143,7 +143,7 @@ html {
         }
 
         &--active {
-            @media(min-width: 1024px) and (orientation: landscape) {
+            @media (min-width: 1024px) and (orientation: landscape) {
                 background-color: #fff;
                 color: $brown;
             }
@@ -160,12 +160,12 @@ html {
         background-color: transparent;
 
         // mobile portrait
-        @media(min-width: 768px) and (orientation: portrait) {
+        @media (min-width: 768px) and (orientation: portrait) {
             font-size: 2rem;
         }
 
         // mobile landscape
-        @media(min-width: 730px) and (orientation: landscape) {
+        @media (min-width: 730px) and (orientation: landscape) {
             display: none;
         }
     }
@@ -181,19 +181,19 @@ html {
     justify-content: center;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.5);
-    background-image: url('../assets/img/bg/top-bg.jpg');
+    background-image: url("../assets/img/bg/top-bg.jpg");
     background-blend-mode: darken;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 
     // mobile landscape
-    @media(orientation: landscape) {
+    @media (orientation: landscape) {
         height: 90vh;
     }
 
     // desktops
-    @media(min-width: 1024px) and (orientation: landscape) {
+    @media (min-width: 1024px) and (orientation: landscape) {
         height: 80vh;
     }
 
@@ -206,21 +206,21 @@ html {
         text-shadow: 0 2px 0 #444;
 
         // mobile portrait
-        @media(min-width: 480px) and (orientation: portrait) {
+        @media (min-width: 480px) and (orientation: portrait) {
             font-size: 3rem;
         }
 
-        @media(min-width: 768px) and (orientation: portrait) {
+        @media (min-width: 768px) and (orientation: portrait) {
             font-size: 4rem;
         }
 
         // mobile landscape
-        @media(min-width: 730px) and (orientation: landscape) {
+        @media (min-width: 730px) and (orientation: landscape) {
             font-size: 2.5rem;
         }
 
         // desktops
-        @media(min-width: 1024px) and (orientation: landscape) {
+        @media (min-width: 1024px) and (orientation: landscape) {
             font-size: 3.5rem;
             letter-spacing: 0.5rem;
         }
@@ -230,21 +230,21 @@ html {
         width: 80%;
 
         // mobile portrait
-        @media(min-width: 768px) and (orientation: portrait) {
+        @media (min-width: 768px) and (orientation: portrait) {
             width: 60%;
         }
 
         // mobile landscape
-        @media(orientation: landscape) {
+        @media (orientation: landscape) {
             width: 50%;
         }
 
-        @media(min-width: 730px) and (orientation: landscape) {
+        @media (min-width: 730px) and (orientation: landscape) {
             width: 30%;
         }
 
         // desktops
-        @media(min-width: 1024px) and (orientation: landscape) {
+        @media (min-width: 1024px) and (orientation: landscape) {
             width: 20%;
         }
     }
@@ -258,44 +258,44 @@ html {
     font-family: $lato;
 
     // mobile portrait
-    @media(min-width: 360px) and (orientation: portrait) {
+    @media (min-width: 360px) and (orientation: portrait) {
         height: 115vh;
     }
 
     // Iphone X
-    @media(max-width: 376px) and (min-height: 812px) {
+    @media (max-width: 376px) and (min-height: 812px) {
         height: 95vh;
     }
 
-    @media(min-width: 410px) and (orientation: portrait) {
+    @media (min-width: 410px) and (orientation: portrait) {
         height: 100vh;
     }
 
-    @media(min-width: 480px) and (orientation: portrait) {
+    @media (min-width: 480px) and (orientation: portrait) {
         height: 90vh;
     }
 
-    @media(min-width: 768px) and (orientation: portrait) {
+    @media (min-width: 768px) and (orientation: portrait) {
         height: 100vh;
         padding: 4rem 2rem;
     }
 
     // mobile landscape
-    @media(orientation: landscape) {
+    @media (orientation: landscape) {
         height: 210vh;
     }
 
-    @media(min-width: 730px) and (orientation: landscape) {
+    @media (min-width: 730px) and (orientation: landscape) {
         height: 220vh;
     }
 
-    @media(min-width: 850px) and (orientation: landscape) {
+    @media (min-width: 850px) and (orientation: landscape) {
         height: 180vh;
         padding: 4rem;
     }
 
     // desktops
-    @media(min-width: 1025px) and (orientation: landscape) {
+    @media (min-width: 1025px) and (orientation: landscape) {
         height: 70vh;
         max-height: 530px;
         max-width: 1520px;
@@ -303,7 +303,8 @@ html {
         display: grid;
         grid-template-rows: repeat(2, 1fr);
         grid-template-columns: 100px 1fr 1fr 100px;
-        grid-template-areas: ". intro image ."
+        grid-template-areas:
+            ". intro image ."
             ". services image .";
     }
 
@@ -311,7 +312,7 @@ html {
         margin-bottom: 4rem;
 
         // desktops
-        @media(min-width: 1025px) and (orientation: landscape) {
+        @media (min-width: 1025px) and (orientation: landscape) {
             grid-area: intro;
             margin-bottom: 0.5rem;
         }
@@ -326,7 +327,7 @@ html {
         text-transform: uppercase;
 
         // mobile portrait
-        @media(min-width: 768px) and (orientation: portrait) {
+        @media (min-width: 768px) and (orientation: portrait) {
             font-size: 1rem;
         }
     }
@@ -341,12 +342,12 @@ html {
         text-transform: uppercase;
 
         // mobile portrait
-        @media(min-width: 768px) and (orientation: portrait) {
+        @media (min-width: 768px) and (orientation: portrait) {
             font-size: 3rem;
         }
 
         // desktops
-        @media(min-width: 1054px) and (orientation: landscape) {
+        @media (min-width: 1054px) and (orientation: landscape) {
             font-size: 2.5rem;
         }
     }
@@ -360,7 +361,7 @@ html {
         line-height: 1.5;
 
         // mobile portrait
-        @media(min-width: 768px) and (orientation: portrait) {
+        @media (min-width: 768px) and (orientation: portrait) {
             font-size: 1.25rem;
         }
     }
@@ -370,23 +371,23 @@ html {
         width: 100%;
         height: 10vh;
         margin-bottom: 4rem;
-        background-image: url('../assets/img/bg/witamy-tlo.jpg');
+        background-image: url("../assets/img/bg/witamy-tlo.jpg");
         background-size: cover;
         background-position: center;
 
         // mobile portrait
-        @media(min-width: 768px) and (orientation: portrait) {
+        @media (min-width: 768px) and (orientation: portrait) {
             display: flex;
         }
 
         // mobile landscape
-        @media(min-width: 730px) and (orientation: landscape) {
+        @media (min-width: 730px) and (orientation: landscape) {
             display: flex;
             height: 20vh;
         }
 
         // desktops
-        @media(min-width: 1025px) and (orientation: landscape) {
+        @media (min-width: 1025px) and (orientation: landscape) {
             height: 12vh;
             max-height: 90px;
             max-width: 595px;
@@ -409,7 +410,7 @@ html {
         align-items: center;
 
         // desktops
-        @media(min-width: 1025px) and (orientation: landscape) {
+        @media (min-width: 1025px) and (orientation: landscape) {
             font-size: 0.875rem;
         }
 
@@ -434,17 +435,17 @@ html {
         transform: translateX(-50%);
 
         // mobile portrait
-        @media(min-width: 768px) and (orientation: portrait) {
+        @media (min-width: 768px) and (orientation: portrait) {
             width: 60%;
         }
 
         // mobile landscape
-        @media(orientation: landscape) {
+        @media (orientation: landscape) {
             width: 60%;
         }
 
         // desktops
-        @media(min-width: 1025px) and (orientation: landscape) {
+        @media (min-width: 1025px) and (orientation: landscape) {
             width: 80%;
             max-width: 476px;
             grid-area: image;
@@ -461,12 +462,12 @@ html {
         padding: 2rem 1rem;
 
         // mobile landscape
-        @media(min-width: 730px) and (orientation: landscape) {
+        @media (min-width: 730px) and (orientation: landscape) {
             padding: 2rem 8rem;
         }
 
         // desktops
-        @media(min-width: 1024px) and (orientation: landscape) {
+        @media (min-width: 1024px) and (orientation: landscape) {
             height: 85vh;
             max-width: 1520px;
             max-height: 642px;
@@ -477,16 +478,16 @@ html {
             row-gap: 2rem;
             grid-template-columns: repeat(4, 1fr);
             column-gap: 2rem;
-            grid-template-areas: "text text text text"
+            grid-template-areas:
+                "text text text text"
                 "main-project main-project image1 image2"
                 "main-project main-project image-big image-big";
         }
     }
 
     &__text-content {
-
         // desktops
-        @media(min-width: 1024px) and (orientation: landscape) {
+        @media (min-width: 1024px) and (orientation: landscape) {
             grid-area: text;
         }
     }
@@ -498,7 +499,7 @@ html {
         text-transform: uppercase;
 
         // desktops
-        @media(min-width: 1024px) and (orientation: landscape) {
+        @media (min-width: 1024px) and (orientation: landscape) {
             margin-top: 0;
             font-size: 2rem;
         }
@@ -513,24 +514,24 @@ html {
         height: 40vh;
         margin-bottom: 1rem;
         color: #fff;
-        background-image: url('../assets/img/portfolio/realizacja-1.jpg');
+        background-image: url("../assets/img/portfolio/realizacja-1.jpg");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
 
         // mobile portrait
-        @media(min-width: 768px) and (orientation: portrait) {
+        @media (min-width: 768px) and (orientation: portrait) {
             margin-left: 8rem;
             margin-right: 8rem;
         }
 
         // mobile landscape
-        @media(orientation: landscape) {
+        @media (orientation: landscape) {
             height: 90vh;
         }
 
         // desktops
-        @media(min-width: 1024px) and (orientation: landscape) {
+        @media (min-width: 1024px) and (orientation: landscape) {
             height: 100%;
             grid-area: main-project;
         }
@@ -546,17 +547,17 @@ html {
         text-align: center;
 
         // mobile portrait
-        @media(min-width: 480px) and (orientation: portrait) {
+        @media (min-width: 480px) and (orientation: portrait) {
             padding: 0 4rem;
         }
 
         // mobile landscape
-        @media(orientation: landscape) {
+        @media (orientation: landscape) {
             height: 90vh;
         }
 
         // desktops
-        @media(min-width: 1024px) and (orientation: landscape) {
+        @media (min-width: 1024px) and (orientation: landscape) {
             height: 100%;
             padding: 0 2rem;
         }
@@ -569,12 +570,12 @@ html {
         text-transform: uppercase;
 
         // mobile portrait
-        @media(min-width: 480px) and (orientation: portrait) {
+        @media (min-width: 480px) and (orientation: portrait) {
             font-size: 1.5rem;
         }
 
         // desktops
-        @media(min-width: 1024px) and (orientation: landscape) {
+        @media (min-width: 1024px) and (orientation: landscape) {
             font-size: 1.75rem;
         }
     }
@@ -585,12 +586,12 @@ html {
         margin-top: 0.25rem;
 
         // mobile portrait
-        @media(min-width: 480px) and (orientation: portrait) {
+        @media (min-width: 480px) and (orientation: portrait) {
             font-size: 1rem;
         }
 
         // desktops
-        @media(min-width: 1024px) and (orientation: landscape) {
+        @media (min-width: 1024px) and (orientation: landscape) {
             font-size: 1rem;
         }
     }
@@ -599,23 +600,21 @@ html {
         width: 49%;
 
         // desktops
-        @media(min-width: 1024px) and (orientation: landscape) {
+        @media (min-width: 1024px) and (orientation: landscape) {
             height: 100%;
             width: 100%;
         }
 
         &:first-of-type {
-
             // desktops
-            @media(min-width: 1024px) and (orientation: landscape) {
+            @media (min-width: 1024px) and (orientation: landscape) {
                 grid-area: image1;
             }
         }
 
         &:nth-of-type(2) {
-
             // desktops
-            @media(min-width: 1024px) and (orientation: landscape) {
+            @media (min-width: 1024px) and (orientation: landscape) {
                 grid-area: image2;
             }
         }
@@ -624,7 +623,7 @@ html {
             width: 99%;
 
             // desktops
-            @media(min-width: 1024px) and (orientation: landscape) {
+            @media (min-width: 1024px) and (orientation: landscape) {
                 height: 100%;
                 width: 100%;
                 grid-area: image-big;
@@ -638,25 +637,25 @@ html {
     padding: 2rem 1rem;
 
     // mobile portrait
-    @media(min-width: 600px) and (orientation: portrait) {
+    @media (min-width: 600px) and (orientation: portrait) {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
     }
 
     // mobile landscape
-    @media(min-width: 640px) and (orientation: landscape) {
+    @media (min-width: 640px) and (orientation: landscape) {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
     }
 
-    @media(min-width: 850px) and (orientation: landscape) {
+    @media (min-width: 850px) and (orientation: landscape) {
         padding: 2rem;
     }
 
     // desktops
-    @media(min-width: 1025px) and (orientation: landscape) {
+    @media (min-width: 1025px) and (orientation: landscape) {
         max-height: 612px;
         max-width: 1520px;
         margin: 0 auto;
@@ -664,14 +663,13 @@ html {
     }
 
     &__intro {
-
         // mobile portrait
-        @media(min-width: 600px) and (orientation: portrait) {
+        @media (min-width: 600px) and (orientation: portrait) {
             flex-basis: 100%;
         }
 
         // mobile portrait
-        @media(min-width: 640px) and (orientation: landscape) {
+        @media (min-width: 640px) and (orientation: landscape) {
             flex-basis: 100%;
         }
     }
@@ -683,7 +681,7 @@ html {
         text-transform: uppercase;
 
         // desktops
-        @media(min-width: 1025px) and (orientation: landscape) {
+        @media (min-width: 1025px) and (orientation: landscape) {
             font-size: 2rem;
         }
     }
@@ -701,17 +699,17 @@ html {
         flex-wrap: wrap;
 
         // mobile portrait
-        @media(min-width: 600px) and (orientation: portrait) {
+        @media (min-width: 600px) and (orientation: portrait) {
             flex-basis: 48%;
         }
 
         // mobile landscape
-        @media(min-width: 640px) and (orientation: landscape) {
+        @media (min-width: 640px) and (orientation: landscape) {
             flex-basis: 48%;
         }
 
         // desktops
-        @media(min-width: 1025px) and (orientation: landscape) {
+        @media (min-width: 1025px) and (orientation: landscape) {
             flex-basis: 30%;
         }
     }
@@ -759,12 +757,12 @@ html {
         padding: 2rem 1rem;
 
         // mobile landscape
-        @media(min-width: 850px) and (orientation: landscape) {
+        @media (min-width: 850px) and (orientation: landscape) {
             padding: 2rem;
         }
 
         // desktops
-        @media(min-width: 1024px) and (orientation: landscape) {
+        @media (min-width: 1024px) and (orientation: landscape) {
             max-height: 526px;
             max-width: 1520px;
             margin: 0 auto;
@@ -778,7 +776,7 @@ html {
         margin-bottom: 2rem;
 
         // dekstops
-        @media(min-width: 1024px) and (orientation: landscape) {
+        @media (min-width: 1024px) and (orientation: landscape) {
             padding-left: 8rem;
             flex-basis: 100%;
         }
@@ -791,7 +789,7 @@ html {
         text-transform: uppercase;
 
         // desktops
-        @media(min-width: 1024px) and (orientation: landscape) {
+        @media (min-width: 1024px) and (orientation: landscape) {
             font-size: 2rem;
         }
     }
@@ -809,35 +807,35 @@ html {
         background-repeat: no-repeat;
 
         &:nth-child(2) {
-            background-image: url('../assets/img/pages/aktualnosci-front-1.jpg');
+            background-image: url("../assets/img/pages/aktualnosci-front-1.jpg");
 
             // desktops
-            @media(min-width: 1024px) and (orientation: landscape) {
+            @media (min-width: 1024px) and (orientation: landscape) {
                 margin-right: 2rem;
             }
         }
 
         &:nth-child(3) {
-            background-image: url('../assets/img/pages/aktualnosci-front-2.jpg');
+            background-image: url("../assets/img/pages/aktualnosci-front-2.jpg");
         }
 
         // mobile portrait
-        @media(min-width: 600px) and (orientation: portrait) {
+        @media (min-width: 600px) and (orientation: portrait) {
             height: 35vh;
         }
 
-        @media(min-width: 768px) and (orientation: portrait) {
+        @media (min-width: 768px) and (orientation: portrait) {
             margin-left: 8rem;
             margin-right: 8rem;
         }
 
         // mobile landscape
-        @media(orientation: landscape) {
+        @media (orientation: landscape) {
             height: 80vh;
         }
 
         // desktops
-        @media(min-width: 1024px) and (orientation: landscape) {
+        @media (min-width: 1024px) and (orientation: landscape) {
             max-height: 301px;
             max-width: 582px;
             height: 40vh;
@@ -860,35 +858,35 @@ html {
         align-items: center;
 
         // mobile portrait
-        @media(min-width: 480px) and (orientation: portrait) {
+        @media (min-width: 480px) and (orientation: portrait) {
             top: -2%;
             bottom: 82%;
             right: 80%;
         }
 
-        @media(min-width: 600px) and (orientation: portrait) {
+        @media (min-width: 600px) and (orientation: portrait) {
             left: -1%;
             right: 85%;
         }
 
-        @media(min-width: 768px) and (orientation: portrait) {
+        @media (min-width: 768px) and (orientation: portrait) {
             left: -2%;
         }
 
         // mobile landscape
-        @media(orientation: landscape) {
+        @media (orientation: landscape) {
             left: -1%;
             right: 80%;
         }
 
-        @media(min-width: 850px) and (orientation: landscape) {
+        @media (min-width: 850px) and (orientation: landscape) {
             top: -2%;
             bottom: 85%;
             right: 90%;
         }
 
         // desktops
-        @media(min-width: 1024px) and (orientation: landscape) {
+        @media (min-width: 1024px) and (orientation: landscape) {
             max-width: 93px;
             max-height: 81px;
             bottom: 75%;
@@ -908,7 +906,7 @@ html {
         text-transform: uppercase;
 
         // mobile portrait
-        @media(min-width: 480px) and (orientation: portrait) {
+        @media (min-width: 480px) and (orientation: portrait) {
             font-size: 0.75rem;
         }
     }
@@ -922,46 +920,46 @@ html {
         color: #fff;
 
         // mobile portrait
-        @media(min-width: 360px) and (orientation: portrait) {
+        @media (min-width: 360px) and (orientation: portrait) {
             top: 55%;
         }
 
         // Iphone X
-        @media(max-width: 376px) and (min-height: 812px) {
+        @media (max-width: 376px) and (min-height: 812px) {
             top: 60%;
         }
 
-        @media(min-width: 410px) and (orientation: portrait) {
+        @media (min-width: 410px) and (orientation: portrait) {
             top: 60%;
         }
 
-        @media(min-width: 600px) and (orientation: portrait) {
+        @media (min-width: 600px) and (orientation: portrait) {
             top: 50%;
         }
 
-        @media(min-width: 800px) and (orientation: portrait) {
+        @media (min-width: 800px) and (orientation: portrait) {
             top: 60%;
         }
 
         // mobile landscape
-        @media(orientation: landscape) {
+        @media (orientation: landscape) {
             top: 50%;
         }
 
-        @media(min-width: 667px) and (orientation: landscape) {
+        @media (min-width: 667px) and (orientation: landscape) {
             top: 60%;
         }
 
-        @media(min-width: 850px) and (orientation: landscape) {
+        @media (min-width: 850px) and (orientation: landscape) {
             padding: 0 2rem;
         }
 
-        @media(min-width: 960px) and (orientation: landscape) {
+        @media (min-width: 960px) and (orientation: landscape) {
             top: 70%;
         }
 
         // desktops
-        @media(min-width: 1024px) and (orientation: landscape) {
+        @media (min-width: 1024px) and (orientation: landscape) {
             max-height: 150px;
             top: 50%;
         }
@@ -975,21 +973,21 @@ html {
         text-transform: uppercase;
 
         // mobile portrait
-        @media(min-width: 480px) and (orientation: portrait) {
+        @media (min-width: 480px) and (orientation: portrait) {
             font-size: 1.5rem;
         }
 
-        @media(min-width: 600px) and (orientation: portrait) {
+        @media (min-width: 600px) and (orientation: portrait) {
             margin-top: 2rem;
         }
 
         // mobile landscape
-        @media(min-width: 850px) and (orientation: landscape) {
+        @media (min-width: 850px) and (orientation: landscape) {
             font-size: 1.5rem;
         }
 
         // desktops
-        @media(min-width: 1024px) and (orientation: landscape) {
+        @media (min-width: 1024px) and (orientation: landscape) {
             margin-top: 1.5rem;
             margin-bottom: 1rem;
             font-size: 1.375rem;
@@ -1004,21 +1002,21 @@ html {
         line-height: 1.5;
 
         // mobile portrait
-        @media(min-width: 480px) and (orientation: portrait) {
+        @media (min-width: 480px) and (orientation: portrait) {
             font-size: 0.85rem;
         }
 
-        @media(min-width: 600px) and (orientation: portrait) {
+        @media (min-width: 600px) and (orientation: portrait) {
             margin-bottom: 1rem;
         }
 
         // mobile landscape
-        @media(min-width: 850px) and (orientation: landscape) {
+        @media (min-width: 850px) and (orientation: landscape) {
             font-size: 1rem;
         }
 
         // desktops
-        @media(min-width: 1024px) and (orientation: landscape) {
+        @media (min-width: 1024px) and (orientation: landscape) {
             font-size: 0.75rem;
         }
     }
@@ -1032,24 +1030,24 @@ html {
         text-transform: uppercase;
 
         &:hover {
-            @media(min-width: 1025px) and (orientation: landscape) {
+            @media (min-width: 1025px) and (orientation: landscape) {
                 color: $brown-hover;
                 text-decoration: underline;
             }
         }
 
         // mobile portrait
-        @media(min-width: 480px) and (orientation: portrait) {
+        @media (min-width: 480px) and (orientation: portrait) {
             font-size: 0.85rem;
         }
 
         // mobile landscape
-        @media(min-width: 850px) and (orientation: landscape) {
+        @media (min-width: 850px) and (orientation: landscape) {
             font-size: 1rem;
         }
 
         // desktops
-        @media(min-width: 1024px) and (orientation: landscape) {
+        @media (min-width: 1024px) and (orientation: landscape) {
             font-size: 0.75rem;
         }
     }
@@ -1057,7 +1055,7 @@ html {
 
 // more
 .more {
-    background-image: url('../assets/img/bg/footer-bg.jpg');
+    background-image: url("../assets/img/bg/footer-bg.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-color: rgba(0, 0, 0, 0.7);
@@ -1065,7 +1063,7 @@ html {
     color: $text-gray;
 
     // desktops
-    @media(min-width: 1025px) and (orientation: landscape) {
+    @media (min-width: 1025px) and (orientation: landscape) {
         background-position-y: 20%;
     }
 
@@ -1073,30 +1071,30 @@ html {
         padding: 2rem 1rem;
 
         // mobile portrait
-        @media(min-width: 410px) and (orientation: portrait) {
+        @media (min-width: 410px) and (orientation: portrait) {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
             align-items: center;
         }
 
-        @media(min-width: 600px) and (orientation: portrait) {
+        @media (min-width: 600px) and (orientation: portrait) {
             justify-content: center;
         }
 
-        @media(min-width: 768px) and (orientation: portrait) {
+        @media (min-width: 768px) and (orientation: portrait) {
             padding: 2rem 8rem;
         }
 
         // mobile landscape
-        @media(orientation: landscape) {
+        @media (orientation: landscape) {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
         }
 
         // desktops
-        @media(min-width: 1025px) and (orientation: landscape) {
+        @media (min-width: 1025px) and (orientation: landscape) {
             max-width: 1520px;
             margin: 0 auto;
             padding: 4rem 10rem;
@@ -1113,22 +1111,22 @@ html {
         margin-bottom: 4rem;
 
         // mobile portrait
-        @media(min-width: 410px) and (orientation: portrait) {
+        @media (min-width: 410px) and (orientation: portrait) {
             margin-bottom: 1rem;
         }
 
-        @media(min-width: 600px) and (orientation: portrait) {
+        @media (min-width: 600px) and (orientation: portrait) {
             flex-basis: 45%;
             margin-right: 2rem;
         }
 
         // mobile landscape
-        @media(orientation: landscape) {
+        @media (orientation: landscape) {
             flex-basis: 45%;
             margin-bottom: 1rem;
         }
 
-        @media(min-width: 812px) and (orientation: landscape) {
+        @media (min-width: 812px) and (orientation: landscape) {
             flex-basis: 24%;
             margin-bottom: 0;
         }
@@ -1144,21 +1142,21 @@ html {
         margin-bottom: 4rem;
 
         // mobile portrait
-        @media(min-width: 410px) and (orientation: portrait) {
+        @media (min-width: 410px) and (orientation: portrait) {
             margin-bottom: 1rem;
         }
 
-        @media(min-width: 600px) and (orientation: portrait) {
+        @media (min-width: 600px) and (orientation: portrait) {
             flex-basis: 45%;
         }
 
         // mobile landscape
-        @media(orientation: landscape) {
+        @media (orientation: landscape) {
             flex-basis: 35%;
             margin-bottom: 1rem;
         }
 
-        @media(min-width: 812px) and (orientation: landscape) {
+        @media (min-width: 812px) and (orientation: landscape) {
             flex-basis: 15%;
             margin-bottom: 0;
         }
@@ -1181,7 +1179,7 @@ html {
 
         // desktops
         &:hover {
-            @media(min-width: 1025px) and (orientation: landscape) {
+            @media (min-width: 1025px) and (orientation: landscape) {
                 color: $brown-hover;
                 text-decoration: underline;
             }
@@ -1192,22 +1190,22 @@ html {
         margin-bottom: 4rem;
 
         // mobile portrait
-        @media(min-width: 410px) and (orientation: portrait) {
+        @media (min-width: 410px) and (orientation: portrait) {
             margin-bottom: 1rem;
         }
 
-        @media(min-width: 600px) and (orientation: portrait) {
+        @media (min-width: 600px) and (orientation: portrait) {
             flex-basis: 45%;
             margin-right: 2rem;
         }
 
         // mobile landscape
-        @media(orientation: landscape) {
+        @media (orientation: landscape) {
             flex-basis: 45%;
             margin-bottom: 0;
         }
 
-        @media(min-width: 812px) and (orientation: landscape) {
+        @media (min-width: 812px) and (orientation: landscape) {
             flex-basis: 24%;
         }
     }
@@ -1244,18 +1242,17 @@ html {
     }
 
     &__newsletter {
-
         // mobile portrait
-        @media(min-width: 600px) and (orientation: portrait) {
+        @media (min-width: 600px) and (orientation: portrait) {
             flex-basis: 45%;
         }
 
         // mobile landscape
-        @media(orientation: landscape) {
+        @media (orientation: landscape) {
             flex-basis: 35%;
         }
 
-        @media(min-width: 812px) and (orientation: landscape) {
+        @media (min-width: 812px) and (orientation: landscape) {
             flex-basis: 24%;
         }
     }
@@ -1284,7 +1281,7 @@ html {
 
         // desktops
         &:hover {
-            @media(min-width: 1025px) and (orientation: landscape) {
+            @media (min-width: 1025px) and (orientation: landscape) {
                 cursor: pointer;
                 background-color: $brown-hover;
             }
@@ -1306,21 +1303,21 @@ html {
     padding: 4rem 1rem 2rem 1rem;
 
     // mobile portrait
-    @media(min-width: 600px) and (orientation: portrait) {
+    @media (min-width: 600px) and (orientation: portrait) {
         padding: 4rem 2rem 2rem 2rem;
     }
 
-    @media(min-width: 768px) and (orientation: portrait) {
+    @media (min-width: 768px) and (orientation: portrait) {
         padding: 4rem 6rem 2rem 6rem;
     }
 
     // mobile landscape
-    @media(min-width: 812px) and (orientation: landscape) {
+    @media (min-width: 812px) and (orientation: landscape) {
         padding: 4rem 6rem 2rem 6rem;
     }
 
     // desktops
-    @media(min-width: 1025px) and (orientation: landscape) {
+    @media (min-width: 1025px) and (orientation: landscape) {
         max-width: 1520px;
         margin: 0 auto;
         padding-top: 6rem;
@@ -1331,13 +1328,13 @@ html {
     &__write {
         margin-bottom: 3rem;
         margin-left: 1rem;
-        background-image: url('../assets/img/bg/contact-form-bg.jpg');
+        background-image: url("../assets/img/bg/contact-form-bg.jpg");
         background-size: cover;
         background-position: center;
         box-shadow: -1.3rem -1.3rem 0 $shadow-form;
 
         // desktops
-        @media(min-width: 1025px) and (orientation: landscape) {
+        @media (min-width: 1025px) and (orientation: landscape) {
             flex-basis: 45%;
             margin-right: 4rem;
         }
@@ -1349,14 +1346,14 @@ html {
         text-transform: uppercase;
 
         // mobile portrait
-        @media(min-width: 480px) and (orientation: portrait) {
+        @media (min-width: 480px) and (orientation: portrait) {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
         }
 
         // mobile landscape
-        @media(min-width: 533px) and (orientation: landscape) {
+        @media (min-width: 533px) and (orientation: landscape) {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
@@ -1369,40 +1366,38 @@ html {
         letter-spacing: 0.05rem;
 
         // mobile portrait
-        @media(min-width: 480px) and (orientation: portrait) {
+        @media (min-width: 480px) and (orientation: portrait) {
             flex-basis: 100%;
             margin-bottom: 0;
         }
 
         // mobile landscape
-        @media(min-width: 533px) and (orientation: landscape) {
+        @media (min-width: 533px) and (orientation: landscape) {
             flex-basis: 100%;
             margin-bottom: 0;
         }
     }
 
     &__field {
-
         // mobile portrait
-        @media(min-width: 480px) and (orientation: portrait) {
+        @media (min-width: 480px) and (orientation: portrait) {
             flex-basis: 45%;
         }
 
         // mobile landscape
-        @media(min-width: 533px) and (orientation: landscape) {
+        @media (min-width: 533px) and (orientation: landscape) {
             flex-basis: 45%;
         }
 
         &--big {
-
             // mobile portrait
-            @media(min-width: 480px) and (orientation: portrait) {
+            @media (min-width: 480px) and (orientation: portrait) {
                 flex-basis: 100%;
                 margin-top: 0;
             }
 
             // mobile landscape
-            @media(min-width: 533px) and (orientation: landscape) {
+            @media (min-width: 533px) and (orientation: landscape) {
                 flex-basis: 100%;
                 margin-top: 0;
             }
@@ -1434,7 +1429,7 @@ html {
 
         // desktops
         &:hover {
-            @media(min-width: 1025px) and (orientation: landscape) {
+            @media (min-width: 1025px) and (orientation: landscape) {
                 cursor: pointer;
                 background-color: $brown-hover;
             }
@@ -1445,7 +1440,7 @@ html {
         width: 100%;
 
         // desktops
-        @media(min-width: 1025px) and (orientation: landscape) {
+        @media (min-width: 1025px) and (orientation: landscape) {
             height: 30%;
             flex-basis: 30%;
         }
@@ -1461,7 +1456,7 @@ html {
     font-family: $lato;
 
     // desktops
-    @media(min-width: 1025px) and (orientation: landscape) {
+    @media (min-width: 1025px) and (orientation: landscape) {
         max-width: 1520px;
         margin: 0 auto;
         padding: 4rem 10rem 2rem 10rem;
@@ -1474,7 +1469,7 @@ html {
         margin-bottom: 2rem;
 
         // desktops
-        @media(min-width: 1025px) and (orientation: landscape) {
+        @media (min-width: 1025px) and (orientation: landscape) {
             flex-basis: 45%;
         }
     }
@@ -1487,7 +1482,7 @@ html {
         text-transform: uppercase;
 
         // mobile portrait
-        @media(min-width: 768px) and (orientation: portrait) {
+        @media (min-width: 768px) and (orientation: portrait) {
             font-size: 1rem;
         }
     }
@@ -1502,12 +1497,12 @@ html {
         text-transform: uppercase;
 
         // mobile portrait
-        @media(min-width: 768px) and (orientation: portrait) {
+        @media (min-width: 768px) and (orientation: portrait) {
             font-size: 3rem;
         }
 
         // desktops
-        @media(min-width: 1054px) and (orientation: landscape) {
+        @media (min-width: 1054px) and (orientation: landscape) {
             font-size: 2.5rem;
         }
     }
@@ -1521,7 +1516,7 @@ html {
         line-height: 1.5;
 
         // mobile portrait
-        @media(min-width: 768px) and (orientation: portrait) {
+        @media (min-width: 768px) and (orientation: portrait) {
             font-size: 1.25rem;
         }
     }
@@ -1531,7 +1526,7 @@ html {
         margin-bottom: 4rem;
 
         // desktops
-        @media(min-width: 1025px) and (orientation: landscape) {
+        @media (min-width: 1025px) and (orientation: landscape) {
             height: 50%;
             width: 50%;
         }
@@ -1543,21 +1538,21 @@ html {
         justify-content: space-between;
 
         // mobile portrait
-        @media(min-width: 480px) and (orientation: portrait) {
+        @media (min-width: 480px) and (orientation: portrait) {
             justify-content: space-around;
         }
 
         // mobile landscape
-        @media(min-width: 533px) and (orientation: landscape) {
+        @media (min-width: 533px) and (orientation: landscape) {
             justify-content: space-around;
         }
 
-        @media(min-width: 812px) and (orientation: landscape) {
+        @media (min-width: 812px) and (orientation: landscape) {
             justify-content: space-between;
         }
 
         // desktops
-        @media(min-width: 1025px) and (orientation: landscape) {
+        @media (min-width: 1025px) and (orientation: landscape) {
             flex-basis: 100%;
         }
     }
@@ -1573,16 +1568,16 @@ html {
         align-items: center;
 
         // mobile portrait
-        @media(min-width: 480px) and (orientation: portrait) {
+        @media (min-width: 480px) and (orientation: portrait) {
             flex-basis: 30%;
         }
 
         // mobile landscape
-        @media(min-width: 533px) and (orientation: landscape) {
+        @media (min-width: 533px) and (orientation: landscape) {
             flex-basis: 30%;
         }
 
-        @media(min-width: 812px) and (orientation: landscape) {
+        @media (min-width: 812px) and (orientation: landscape) {
             flex-basis: 15%;
         }
     }
@@ -1610,7 +1605,7 @@ html {
     padding: 2rem 1rem;
 
     // desktops
-    @media(min-width: 1025px) and (orientation: landscape) {
+    @media (min-width: 1025px) and (orientation: landscape) {
         max-width: 1520px;
         margin: 0 auto;
     }
@@ -1624,7 +1619,7 @@ html {
         justify-content: center;
 
         // mobile portrait
-        @media(min-width: 480px) and (orientation: portrait) {
+        @media (min-width: 480px) and (orientation: portrait) {
             padding: 0 4rem;
         }
     }
@@ -1655,26 +1650,26 @@ html {
         max-width: 349px;
         max-height: 276px;
         margin-bottom: 2rem;
-        background-image: url('../assets/img/portfolio/portfolio-2.jpg');
+        background-image: url("../assets/img/portfolio/portfolio-2.jpg");
         background-size: cover;
 
         // mobile portrait
-        @media(min-width: 768px) and (orientation: portrait) {
+        @media (min-width: 768px) and (orientation: portrait) {
             flex-basis: 48%;
             margin-right: 0.5rem;
         }
 
         // mobile landscape
-        @media(orientation: landscape) {
+        @media (orientation: landscape) {
             height: 90vh;
         }
 
-        @media(min-width: 730px) and (orientation: landscape) {
+        @media (min-width: 730px) and (orientation: landscape) {
             margin-right: 0.5rem;
         }
 
         // desktops
-        @media(min-width: 1025px) and (orientation: landscape) {
+        @media (min-width: 1025px) and (orientation: landscape) {
             margin-left: 1rem;
             margin-right: 1rem;
         }
@@ -1687,19 +1682,19 @@ html {
         margin-bottom: 2rem;
 
         // mobile portrait
-        @media(min-width: 768px) and (orientation: portrait) {
+        @media (min-width: 768px) and (orientation: portrait) {
             flex-basis: 48%;
             margin-left: 0.5rem;
             margin-right: 0.5rem;
         }
 
-        @media(min-width: 730px) and (orientation: landscape) {
+        @media (min-width: 730px) and (orientation: landscape) {
             margin-left: 0.5rem;
             margin-right: 0.5rem;
         }
 
         // desktops
-        @media(min-width: 1025px) and (orientation: landscape) {
+        @media (min-width: 1025px) and (orientation: landscape) {
             margin-left: 1rem;
             margin-right: 1rem;
         }
@@ -1764,7 +1759,7 @@ html {
             color: $light-gray;
 
             // desktops
-            @media(min-width: 1025px) and (orientation: landscape) {
+            @media (min-width: 1025px) and (orientation: landscape) {
                 cursor: default;
             }
         }
@@ -1778,7 +1773,13 @@ html {
     text-align: center;
 
     // mobile portrait
-    @media(min-width: 400px) and (orientation: portrait) {
+    @media (min-width: 400px) and (orientation: portrait) {
+        max-width: 320px;
+        margin: 3rem auto;
+    }
+
+    // mobile landscape
+    @media (min-width: 360px) and (orientation: landscape) {
         max-width: 320px;
         margin: 3rem auto;
     }
@@ -1791,7 +1792,7 @@ html {
         text-transform: uppercase;
 
         // mobile portrait
-        @media(min-width: 768px) and (orientation: portrait) {
+        @media (min-width: 768px) and (orientation: portrait) {
             font-size: 0.8rem;
         }
     }
@@ -1807,12 +1808,12 @@ html {
         text-transform: uppercase;
 
         // mobile portrait
-        @media(min-width: 768px) and (orientation: portrait) {
+        @media (min-width: 768px) and (orientation: portrait) {
             font-size: 2.5rem;
         }
 
         // desktops
-        @media(min-width: 1054px) and (orientation: landscape) {
+        @media (min-width: 1054px) and (orientation: landscape) {
             font-size: 2.5rem;
         }
     }
