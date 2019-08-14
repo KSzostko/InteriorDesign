@@ -1784,6 +1784,11 @@ html {
         margin: 3rem auto;
     }
 
+    // desktops
+    @media (min-width: 1025px) and (orientation: landscape) {
+        max-width: 465px;
+    }
+
     &__subheader {
         color: $light-gray;
         font-weight: 300;
