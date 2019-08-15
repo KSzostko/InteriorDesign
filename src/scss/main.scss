@@ -486,6 +486,7 @@ html {
     }
 
     &__text-content {
+
         // desktops
         @media (min-width: 1024px) and (orientation: landscape) {
             grid-area: text;
@@ -606,6 +607,7 @@ html {
         }
 
         &:first-of-type {
+
             // desktops
             @media (min-width: 1024px) and (orientation: landscape) {
                 grid-area: image1;
@@ -613,6 +615,7 @@ html {
         }
 
         &:nth-of-type(2) {
+
             // desktops
             @media (min-width: 1024px) and (orientation: landscape) {
                 grid-area: image2;
@@ -663,6 +666,7 @@ html {
     }
 
     &__intro {
+
         // mobile portrait
         @media (min-width: 600px) and (orientation: portrait) {
             flex-basis: 100%;
@@ -1242,6 +1246,7 @@ html {
     }
 
     &__newsletter {
+
         // mobile portrait
         @media (min-width: 600px) and (orientation: portrait) {
             flex-basis: 45%;
@@ -1379,6 +1384,7 @@ html {
     }
 
     &__field {
+
         // mobile portrait
         @media (min-width: 480px) and (orientation: portrait) {
             flex-basis: 45%;
@@ -1390,6 +1396,7 @@ html {
         }
 
         &--big {
+
             // mobile portrait
             @media (min-width: 480px) and (orientation: portrait) {
                 flex-basis: 100%;
@@ -1831,5 +1838,43 @@ html {
 
     &__content {
         line-height: 1.5;
+    }
+}
+
+// search (shop.html)
+.search {
+    background-color: $light-bgc;
+
+    &__wrapper {
+        margin: 0 1rem;
+        padding: 3rem 0;
+        display: flex;
+        justify-content: center;
+        font-family: $oswald;
+        font-size: 0.625rem;
+    }
+
+    &__input {
+        flex-basis: 50%;
+        padding: 0.375rem 0.75rem;
+        border: 1px solid $brown;
+        border-radius: 0;
+        letter-spacing: 0.02rem;
+    }
+
+    &__select {
+        flex-basis: 30%;
+        padding: 0.375rem 0.75rem;
+        border: 1px solid $brown;
+        border-radius: 0;
+        letter-spacing: 0.02rem;
+        text-transform: uppercase;
+    }
+
+    &__button {
+        flex-basis: 12%;
+        border-style: none;
+        background-color: $brown;
+        color: #fff;
     }
 }
