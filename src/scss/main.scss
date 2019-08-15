@@ -1858,6 +1858,12 @@ html {
             max-width: 352px;
             margin: 0 auto;
         }
+
+        // mobile landscape
+        @media(orientation: landscape) {
+            max-width: 400px;
+            margin: 0 auto;
+        }
     }
 
     &__input {
@@ -1865,7 +1871,12 @@ html {
         padding: 0.375rem 0.75rem;
         border: 1px solid $brown;
         border-radius: 0;
-        letter-spacing: 0.02rem;
+        letter-spacing: 0.05rem;
+
+        // mobile landscape
+        @media(min-width: 533px) and (orientation: landscape) {
+            flex-basis: 80%;
+        }
     }
 
     &__select {
@@ -1873,8 +1884,13 @@ html {
         padding: 0.375rem 0.75rem;
         border: 1px solid $brown;
         border-radius: 0;
-        letter-spacing: 0.02rem;
+        letter-spacing: 0.05rem;
         text-transform: uppercase;
+
+        // mobile landscape
+        @media(min-width: 533px) and (orientation: landscape) {
+            flex-basis: 20%;
+        }
     }
 
     &__button {
@@ -1882,5 +1898,10 @@ html {
         border-style: none;
         background-color: $brown;
         color: #fff;
+
+        // mobile landscape
+        @media(min-width: 533px) and (orientation: landscape) {
+            flex-basis: 10%;
+        }
     }
 }
