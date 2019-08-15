@@ -1852,6 +1852,12 @@ html {
         justify-content: center;
         font-family: $oswald;
         font-size: 0.625rem;
+
+        // mobile portrait
+        @media(min-width:384px) and (orientation: portrait) {
+            max-width: 352px;
+            margin: 0 auto;
+        }
     }
 
     &__input {
