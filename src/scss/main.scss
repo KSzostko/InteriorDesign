@@ -1904,3 +1904,99 @@ html {
         }
     }
 }
+
+// products (shop.html)
+.products {
+    padding: 3rem 1rem 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__pages {
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        list-style: none;
+    }
+
+    &__pages-link {
+        display: block;
+
+        font-family: $oswald;
+        font-weight: 300;
+        text-decoration: none;
+
+        &--next {
+            padding-left: 0.5rem;
+            color: #000;
+
+            &:hover {
+                color: $brown;
+            }
+        }
+
+        &--previous {
+            padding-right: 0.5rem;
+            color: $light-gray;
+
+            // desktops
+            @media (min-width: 1025px) and (orientation: landscape) {
+                cursor: default;
+            }
+        }
+    }
+}
+
+.product {
+    width: calc(100vw - 2rem);
+    margin-bottom: 3rem;
+
+    &__link {
+        padding: 1rem;
+        display: flex;
+        justify-content: center;
+        background-color: $product-gray;
+    }
+
+    &__options {
+        display: none;
+    }
+
+    &__info {
+        margin-top: 0.75rem;
+        display: grid;
+        grid-template-columns: repeat(1fr, 3);
+        grid-template-rows: repeat(1fr, 3);
+        row-gap: 0.25rem;
+        grid-template-areas: "name name name"
+            "type type type"
+            "prize . opinion";
+        font-family: $oswald;
+    }
+
+    &__name {
+        grid-area: name;
+        align-self: end;
+        margin: 0;
+        letter-spacing: 0.1rem;
+        text-transform: uppercase;
+    }
+
+    &__type {
+        grid-area: type;
+        margin: 0 0 0.5rem 0;
+        font-size: 0.75rem;
+        font-weight: 300;
+    }
+
+    &__prize {
+        grid-area: prize;
+        font-weight: 700;
+    }
+
+    &__opinion {
+        grid-area: opinion;
+        align-self: end;
+        justify-self: end;
+    }
+}
