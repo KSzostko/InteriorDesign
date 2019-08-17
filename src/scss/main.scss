@@ -1973,6 +1973,11 @@ html {
         margin-right: 0.5rem;
     }
 
+    // mobile landscape
+    @media(min-width: 533px) and (orientation: landscape) {
+        width: calc(100vw - 10rem);
+    }
+
     &__link {
         padding: 1rem;
         display: flex;
