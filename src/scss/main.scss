@@ -1913,7 +1913,7 @@ html {
     align-items: center;
 
     // mobile portrait
-    @media(min-width: 600px) and (orientation: portrait) {
+    @media(min-width: 600px) {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
@@ -1926,7 +1926,7 @@ html {
         list-style: none;
 
         // mobile portrait
-        @media(min-width: 600px) and (orientation: portrait) {
+        @media(min-width: 600px) {
             flex-basis: 100%;
         }
     }
@@ -1967,7 +1967,7 @@ html {
         width: calc(100vw - 10rem);
     }
 
-    @media(min-width: 600px) and (orientation: portrait) {
+    @media(min-width: 600px) {
         max-width: 256px;
         margin-left: 0.5rem;
         margin-right: 0.5rem;
@@ -1980,7 +1980,7 @@ html {
         background-color: $product-gray;
 
         // mobile portrait
-        @media(min-width: 600px) and (orientation: portrait) {
+        @media(min-width: 600px) {
             height: 200px;
         }
     }
