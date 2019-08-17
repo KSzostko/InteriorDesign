@@ -1995,15 +1995,55 @@ html {
         display: flex;
         justify-content: center;
         background-color: $product-gray;
+        transition: 0.5s;
 
         // mobile portrait
         @media(min-width: 600px) {
             height: 200px;
         }
+
+        // desktops
+        @media(min-width: 1025px) and (orientation: landscape) {
+            position: relative;
+        }
+
+        &:hover {
+            @media(min-width: 1025px) and (orientation: landscape) {
+                background-color: $product-hover;
+            }
+        }
+
+        &:hover .product__options {
+            @media(min-width: 1025px) and (orientation: landscape) {
+                opacity: 1;
+            }
+        }
     }
 
     &__options {
-        display: none;
+        opacity: 0;
+        transition: 0.5s;
+
+        // desktops
+        @media(min-width: 1025px) and (orientation: landscape) {
+            position: absolute;
+            top: 0.75rem;
+            right: 0.5rem;
+        }
+    }
+
+    &__option {
+        @media(min-width: 1025px) and (orientation: landscape) {
+            margin-bottom: 0.75rem;
+            padding: 0.5rem;
+            background-color: $option-gray;
+        }
+
+        &--main {
+            @media(min-width: 1025px) and (orientation: landscape) {
+                background-color: $brown;
+            }
+        }
     }
 
     &__info {
@@ -2024,6 +2064,12 @@ html {
         margin: 0;
         letter-spacing: 0.1rem;
         text-transform: uppercase;
+
+        &:hover {
+            color: $product-name-hover;
+            cursor: pointer;
+            text-decoration: underline;
+        }
     }
 
     &__type {
