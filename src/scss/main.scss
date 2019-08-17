@@ -1919,6 +1919,12 @@ html {
         justify-content: center;
     }
 
+    // desktops
+    @media(min-width: 1025px) and (orientation: landscape) {
+        max-width: 1300px;
+        margin: 0 auto;
+    }
+
     &__pages {
         display: flex;
         justify-content: center;
@@ -1976,6 +1982,12 @@ html {
     // mobile landscape
     @media(min-width: 533px) and (orientation: landscape) {
         width: calc(100vw - 10rem);
+    }
+
+    // desktops
+    @media(min-width: 1025px) and (orientation: landscape) {
+        margin-left: 1rem;
+        margin-right: 1rem;
     }
 
     &__link {
