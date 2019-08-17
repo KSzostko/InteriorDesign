@@ -1951,6 +1951,11 @@ html {
     width: calc(100vw - 2rem);
     margin-bottom: 3rem;
 
+    // mobile portrait
+    @media(min-width: 480px) and (orientation: portrait) {
+        width: calc(100vw - 10rem);
+    }
+
     &__link {
         padding: 1rem;
         display: flex;
