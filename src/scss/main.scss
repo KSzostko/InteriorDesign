@@ -2090,3 +2090,71 @@ html {
         justify-self: end;
     }
 }
+
+// product-data (product.html)
+.product-data {
+    padding-bottom: 2rem;
+    margin: 4rem 1rem 2rem 1rem;
+    border-bottom: 1px solid $light-gray;
+    font-family: $oswald;
+    font-weight: 300;
+    letter-spacing: 0.1rem;
+    line-height: 1.5;
+
+    &__short-description {
+        margin-bottom: 2rem;
+    }
+
+    &__form {
+        padding-bottom: 1rem;
+    }
+
+    &__label {
+        margin-right: 1rem;
+        font-size: 0.75rem;
+        text-transform: uppercase;
+    }
+
+    &__amount {
+        margin-bottom: 1rem;
+        font-size: 0.75rem;
+    }
+
+    &__button {
+        padding: 0.5rem 0.75rem;
+        border-style: none;
+        background-color: $brown;
+        font-family: $oswald;
+        font-weight: 300;
+        color: #fff;
+        letter-spacing: 0.1rem;
+        font-size: 0.85rem;
+        text-transform: uppercase;
+    }
+}
+
+// reused some styles form class product form shop.html
+.product {
+    &--main {
+        margin-bottom: 2rem;
+    }
+
+    &__image--main {
+        width: 100%;
+    }
+
+    &__info--main {
+        row-gap: 0.5rem;
+        padding-bottom: 2rem;
+        border-bottom: 1px solid $light-gray;
+    }
+
+    &__name--main {
+        margin-top: 1rem;
+        font-size: 1.125rem;
+    }
+
+    &__prize--main {
+        font-size: 1.125rem;
+    }
+}
