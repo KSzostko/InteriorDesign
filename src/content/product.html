@@ -43,7 +43,41 @@
     </header>
 
     <main>
-
+        <section class="product-data">
+            <div class="product">
+                <a class="product__link" href="product.html">
+                    <img class="product__image" src="../assets/img/pages/product-1-sm.png" alt="koszyk">
+                    <div class="product__options">
+                        <div class="product__option product__option--main">
+                            <img class="product__icon" src="../assets/img/ui/product-item-icon-1.png"
+                                alt="dodaj do koszyka">
+                        </div>
+                        <div class="product__option">
+                            <img class="product__icon" src="../assets/img/ui/product-item-icon-2.png" alt="dodaj do ulubionych">
+                        </div>
+                        <div class="product__option">
+                            <img class="product__icon" src="../assets/img/ui/product-item-icon-3.png" alt="udostępnij">
+                        </div>
+                        <div class="product__option">
+                            <img class="product__icon" src="../assets/img/ui/product-item-icon-4.png" alt="powiększ">
+                        </div>
+                    </div>
+                </a>
+                <div class="product__info">
+                    <h4 class="product__name">Nazwa produktu</h4>
+                    <span class="product__prize">199zł</span>
+                    <img class="product__opinion" src="../assets/img/ui/stars.png" alt="ocena">
+                </div>
+            </div>
+            <p class="product__short-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates quo quae laudantium totam id at saepe impedit perferendis repellendus eveniet ducimus inventore, quod, repellat. Distinctio corporis voluptas, facilis deleniti atque.</p>
+            <form action="#">
+                <p>
+                    <label class="product__label" for="amount">Ilość sztuk</label>
+                    <input id="amount" class="product__amount" type="number" min="1">
+                </p>
+                <button class="product__button">Dodaj do koszyka</button>
+            </form>
+        </section>
     </main>
 
     <section class="more">
