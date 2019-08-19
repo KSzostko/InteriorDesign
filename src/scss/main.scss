@@ -2090,3 +2090,165 @@ html {
         justify-self: end;
     }
 }
+
+// product-data (product.html)
+.product-data {
+    padding-bottom: 2rem;
+    margin: 4rem 1rem 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: $oswald;
+    font-weight: 300;
+    letter-spacing: 0.1rem;
+    line-height: 1.5;
+
+    // desktops
+    @media(min-width: 1025px) and (orientation: landscape) {
+        max-width: 1200px;
+        margin: 4rem auto 2rem auto;
+    }
+
+    &__text-content {
+
+        // desktops
+        @media(min-width: 1025px) and (orientation: landscape) {
+            grid-area: text;
+        }
+    }
+
+    &__short-description {
+        margin-bottom: 2rem;
+    }
+
+    &__form {
+        padding-bottom: 1rem;
+    }
+
+    &__label {
+        margin-right: 1rem;
+        font-size: 0.75rem;
+        text-transform: uppercase;
+    }
+
+    &__amount {
+        margin-bottom: 1rem;
+        font-size: 0.75rem;
+    }
+
+    &__button {
+        padding: 0.5rem 0.75rem;
+        border-style: none;
+        background-color: $brown;
+        font-family: $oswald;
+        font-weight: 300;
+        color: #fff;
+        letter-spacing: 0.1rem;
+        font-size: 0.85rem;
+        text-transform: uppercase;
+        transition: 0.5s;
+
+        // desktops
+        &:hover {
+            @media (min-width: 1025px) and (orientation: landscape) {
+                cursor: pointer;
+                background-color: $brown-hover;
+            }
+        }
+    }
+}
+
+// reused some styles form class product form shop.html
+.product {
+    &--main {
+        max-width: 100%;
+        margin-bottom: 2rem;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid $light-gray;
+
+        // desktops
+        @media(min-width: 1025px) and (orientation: landscape) {
+            padding-bottom: 4rem;
+            display: grid;
+            grid-template-rows: 100px 1fr;
+            grid-template-columns: 1fr 1fr;
+            column-gap: 2rem;
+            grid-template-areas: "link info"
+                "link text";
+        }
+    }
+
+    &__link--main {
+        width: 100%;
+        height: 100%;
+
+        // desktops
+        @media(min-width: 1025px) and (orientation: landscape) {
+            margin-top: 1rem;
+            grid-area: link;
+        }
+
+        // diabling hover form reused styles
+        &:hover {
+            @media(min-width: 1025px) and (orientation: landscape) {
+                background-color: $product-gray;
+            }
+        }
+    }
+
+    &__image--main {
+        width: 100%;
+
+        // desktops
+        @media(min-width: 1025px) and (orientation: landscape) {
+            max-height: 300px;
+        }
+    }
+
+    &__info--main {
+        row-gap: 0.5rem;
+        padding-bottom: 2rem;
+        border-bottom: 1px solid $light-gray;
+
+        // desktops
+        @media(min-width: 1025px) and (orientation: landscape) {
+            margin-top: 0;
+            grid-area: info;
+
+            // content inside
+            grid-template-columns: 1fr 10px 1fr;
+            grid-template-rows: 40px 40px;
+            grid-template-areas: "name name name"
+                "prize opinion .";
+        }
+    }
+
+    &__name--main {
+        margin-top: 1rem;
+        font-size: 1.125rem;
+
+        // desktops
+        @media(min-width: 1025px) and (orientation: landscape) {
+            align-self: start;
+        }
+
+        // diabling hover form reused styles
+        &:hover {
+            color: #000;
+            cursor: auto;
+            text-decoration: none;
+        }
+    }
+
+    &__prize--main {
+        font-size: 1.125rem;
+    }
+
+    &__opinion--main {
+
+        // desktops
+        @media(min-width: 1025px) and (orientation: landscape) {
+            align-self: center;
+        }
+    }
+}
