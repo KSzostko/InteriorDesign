@@ -2287,3 +2287,56 @@ html {
         }
     }
 }
+
+// description (product.html)
+.description {
+    position: relative;
+    margin: 0 1rem 2rem 1rem;
+    padding: 2rem;
+    border: 1px solid $light-gray;
+
+    &__tab {
+        position: absolute;
+        bottom: calc(100% + 1px);
+        left: -1px;
+        height: 30px;
+        padding: 0rem 2rem;
+        background-color: $product-gray;
+
+        // content inside
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &--main {
+            bottom: calc(100% + 31px);
+            background-color: $brown;
+            color: #fff;
+        }
+    }
+
+    &__tab-name {
+        margin: 0;
+        font-family: $oswald;
+        font-weight: 300;
+        letter-spacing: 0.1rem;
+        text-transform: uppercase;
+    }
+
+    &__article {
+        font-family: $oswald;
+    }
+
+    &__article-title {
+        margin-top: 0;
+        margin-bottom: 1rem;
+        font-size: 1.125rem;
+        text-transform: uppercase;
+    }
+
+    &__article-content {
+        font-size: 0.875rem;
+        font-weight: 300;
+        line-height: 1.5;
+    }
+}
