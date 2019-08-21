@@ -2308,10 +2308,21 @@ html {
         justify-content: center;
         align-items: center;
 
+        // mobile portrait
+        @media(min-width: 410px) and (orientation: portrait) {
+            left: 161px;
+        }
+
         &--main {
             bottom: calc(100% + 31px);
             background-color: $brown;
             color: #fff;
+
+            // mobile portrait
+            @media(min-width: 410px) and (orientation: portrait) {
+                bottom: calc(100% + 1px);
+                left: -1px;
+            }
         }
     }
 
