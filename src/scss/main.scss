@@ -2300,6 +2300,11 @@ html {
         margin: 0 2rem 2rem 2rem;
     }
 
+    // mobile landscape
+    @media(min-width: 640px) and (orientation: landscape) {
+        margin: 0 4rem 2rem 4rem;
+    }
+
     &__tab {
         position: absolute;
         bottom: calc(100% + 1px);
