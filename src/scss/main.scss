@@ -2314,7 +2314,7 @@ html {
         align-items: center;
 
         // mobile portrait
-        @media(min-width: 410px) and (orientation: portrait) {
+        @media(min-width: 410px) {
             left: 161px;
         }
 
@@ -2324,7 +2324,7 @@ html {
             color: #fff;
 
             // mobile portrait
-            @media(min-width: 410px) and (orientation: portrait) {
+            @media(min-width: 410px) {
                 bottom: calc(100% + 1px);
                 left: -1px;
             }
