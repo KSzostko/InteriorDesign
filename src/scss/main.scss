@@ -2305,6 +2305,13 @@ html {
         margin: 0 4rem 2rem 4rem;
     }
 
+    // desktops
+    @media(min-width: 1025px) and (orientation: landscape) {
+        max-width: 1200px;
+        margin: 0 auto 2rem auto;
+        padding: 2rem 4rem;
+    }
+
     &__tab {
         position: absolute;
         bottom: calc(100% + 1px);
@@ -2321,6 +2328,12 @@ html {
         // mobile portrait
         @media(min-width: 410px) {
             left: 161px;
+        }
+
+        // desktops
+        @media(min-width: 1025px) and (orientation: landscape) {
+            left: 193px;
+            padding: 0 3rem;
         }
 
         &--main {
