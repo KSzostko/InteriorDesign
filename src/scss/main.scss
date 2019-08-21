@@ -2330,6 +2330,12 @@ html {
             left: 161px;
         }
 
+        // desktops
+        @media(min-width: 1025px) and (orientation: landscape) {
+            left: 193px;
+            padding: 0 3rem;
+        }
+
         &--main {
             bottom: calc(100% + 31px);
             background-color: $brown;
