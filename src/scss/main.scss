@@ -2305,6 +2305,13 @@ html {
         margin: 0 4rem 2rem 4rem;
     }
 
+    // desktops
+    @media(min-width: 1025px) and (orientation: landscape) {
+        max-width: 1200px;
+        margin: 0 auto 2rem auto;
+        padding: 2rem 4rem;
+    }
+
     &__tab {
         position: absolute;
         bottom: calc(100% + 1px);
