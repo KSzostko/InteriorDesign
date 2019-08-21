@@ -2295,6 +2295,11 @@ html {
     padding: 2rem;
     border: 1px solid $light-gray;
 
+    // mobile portrait
+    @media(min-width: 480px) and (orientation: portrait) {
+        margin: 0 2rem 2rem 2rem;
+    }
+
     &__tab {
         position: absolute;
         bottom: calc(100% + 1px);
