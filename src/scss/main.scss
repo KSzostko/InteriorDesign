@@ -848,6 +848,8 @@ html {
     }
 
     &__item-date {
+        max-width: 95px;
+        max-height: 95px;
         position: absolute;
         top: -5%;
         bottom: 75%;
@@ -2379,4 +2381,202 @@ html {
     padding: 2rem 0;
     display: flex;
     justify-content: center;
+}
+
+// posts (post-list.html)
+.posts {
+    margin: 2rem 1rem;
+
+    &__pages {
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        list-style: none;
+    }
+
+    &__pages-link {
+        display: block;
+
+        font-family: $oswald;
+        font-weight: 300;
+        text-decoration: none;
+
+        &--next {
+            padding-left: 0.5rem;
+            color: #000;
+
+            &:hover {
+                color: $brown;
+            }
+        }
+
+        &--previous {
+            padding-right: 0.5rem;
+            color: $light-gray;
+
+            // desktops
+            @media (min-width: 1025px) and (orientation: landscape) {
+                cursor: default;
+            }
+        }
+    }
+}
+
+.post {
+    max-width: 760px;
+    margin: 0 auto 2rem auto;
+    padding-bottom: 2rem;
+
+    // mobile
+    @media(min-width: 760px) and (max-width: 800px) {
+        margin: 0 1rem 2rem 1rem;
+    }
+
+    &:first-of-type {
+        border-bottom: 1px solid $light-gray;
+
+        & .post__image {
+            background-image: url("../assets/img/posts/post-1.jpg");
+
+            // desktops
+            @media (min-width: 1024px) and (orientation: landscape) {
+                margin-right: 2rem;
+            }
+        }
+    }
+
+    &:nth-of-type(2) {
+        padding-top: 2rem;
+
+        & .post__image {
+            background-image: url("../assets/img/posts/post-2.jpg");
+        }
+    }
+
+    // resued styles for newset-item section
+    &__image {
+        max-width: 720px;
+        max-height: 350px;
+        height: 50vh;
+        margin-bottom: 2rem;
+        position: relative;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        // mobile portrait
+        @media (min-width: 600px) and (orientation: portrait) {
+            height: 35vh;
+        }
+
+        // mobile landscape
+        @media (orientation: landscape) {
+            height: 80vh;
+        }
+    }
+
+    &__date {
+        max-width: 95px;
+        max-height: 95px;
+        position: absolute;
+        top: -5%;
+        bottom: 75%;
+        left: -2%;
+        right: 75%;
+        background-color: $brown;
+
+        // items inside
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        // mobile portrait
+        @media (min-width: 480px) and (orientation: portrait) {
+            top: -2%;
+            bottom: 82%;
+            right: 80%;
+        }
+
+        @media (min-width: 600px) and (orientation: portrait) {
+            left: -1%;
+            right: 85%;
+        }
+
+        @media (min-width: 768px) and (orientation: portrait) {
+            left: -2%;
+        }
+
+        // mobile landscape
+        @media (orientation: landscape) {
+            left: -1%;
+            right: 80%;
+        }
+
+        @media (min-width: 850px) and (orientation: landscape) {
+            top: -2%;
+            bottom: 85%;
+            right: 90%;
+        }
+
+        // desktops
+        @media (min-width: 1024px) and (orientation: landscape) {
+            max-width: 93px;
+            max-height: 81px;
+            bottom: 75%;
+            right: 85%;
+        }
+    }
+
+    &__date-image {
+        margin-bottom: 0.5rem;
+    }
+
+    &__date-text {
+        font-family: $oswald;
+        color: #fff;
+        font-weight: 300;
+        font-size: 0.65rem;
+        text-transform: uppercase;
+
+        // mobile portrait
+        @media (min-width: 480px) and (orientation: portrait) {
+            font-size: 0.75rem;
+        }
+    }
+
+    &__article-title {
+        font-family: $oswald;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+    }
+
+    &__article-content {
+        font-family: $lato;
+        line-height: 1.5;
+
+        // desktops
+        @media(min-width: 1024px) and (orientation: landscape) {
+            padding-right: 2rem;
+        }
+    }
+
+    &__more {
+        display: inline-block;
+        padding: 0.5rem 0.75rem;
+        background-color: $brown;
+        font-family: $oswald;
+        color: #fff;
+        font-size: 0.75rem;
+        letter-spacing: 0.1rem;
+        text-transform: uppercase;
+        text-decoration: none;
+        transition: 0.5s;
+
+        &:hover {
+            @media(min-width: 1025px) and (orientation: landscape) {
+                background-color: $brown-hover;
+                cursor: pointer;
+            }
+        }
+    }
 }
