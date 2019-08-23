@@ -2580,3 +2580,35 @@ html {
         }
     }
 }
+
+// archive-search (post-list.html)
+.archive-search {
+    margin: 0 1rem 2rem 1rem;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: center;
+    background-color: $product-gray;
+
+    // mobile
+    @media(min-width: 850px) {
+        max-width: 760px;
+        margin: 0 auto 2rem auto;
+    }
+
+    &__input {
+        height: 40px;
+        flex-grow: 1;
+        padding: 0.5rem;
+        border-radius: 0;
+        font-family: $oswald;
+        letter-spacing: 0.1rem;
+    }
+
+    &__button {
+        height: 40px;
+        padding: 0.65rem;
+        border-style: none;
+        background-color: $dark-gray;
+        color: #fff;
+    }
+}
