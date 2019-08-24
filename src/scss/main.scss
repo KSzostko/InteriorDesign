@@ -2612,3 +2612,42 @@ html {
         color: #fff;
     }
 }
+
+// archive (post-list.html)
+.archive {
+    margin: 0 1rem 2rem 1rem;
+    padding: 2rem 2rem 1rem 2rem;
+    background-color: $product-gray;
+    font-family: $oswald;
+
+    // mobile
+    @media(min-width: 850px) {
+        max-width: 760px;
+        margin: 0 auto 2rem auto;
+    }
+
+    &__header {
+        margin-top: 0;
+        padding-bottom: 0.5rem;
+        border-bottom: 1px solid $light-gray;
+        letter-spacing: 0.1rem;
+        text-transform: uppercase;
+    }
+
+    &__year {
+        margin: 0.5rem 0;
+        font-size: 0.875rem;
+    }
+
+    &__months {
+        padding-left: 1rem;
+        list-style: none;
+    }
+
+    &__month {
+        margin-bottom: 0.5rem;
+        display: flex;
+        justify-content: space-between;
+        font-weight: 300;
+    }
+}
