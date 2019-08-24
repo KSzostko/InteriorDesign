@@ -2684,3 +2684,46 @@ html {
         font-weight: 300;
     }
 }
+
+// category (post-list.html)
+.category {
+    margin: 0 1rem 2rem 1rem;
+    padding: 2rem;
+    background-color: $product-gray;
+    font-family: $oswald;
+
+    // mobile
+    @media(min-width: 850px) {
+        max-width: 760px;
+        margin: 0 auto 2rem auto;
+    }
+
+    &__header {
+        margin-top: 0;
+        padding-bottom: 0.5rem;
+        border-bottom: 1px solid $light-gray;
+        letter-spacing: 0.1rem;
+        text-transform: uppercase;
+    }
+
+    &__items {
+        margin-top: 2rem;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__item {
+        display: inline-block;
+        padding: 0.25rem 1rem;
+        margin-bottom: 0.25rem;
+        margin-left: 0.25rem;
+        background-color: #000;
+        color: #fff;
+        font-weight: 300;
+        text-decoration: none;
+
+        &--popular {
+            background-color: $brown;
+        }
+    }
+}
