@@ -2381,11 +2381,21 @@ html {
     padding: 2rem 0;
     display: flex;
     justify-content: center;
+
+    // desktops
+    @media(min-width: 1025px) and (orientation: landscape) {
+        grid-area: switchers;
+    }
 }
 
 // posts (post-list.html)
 .posts {
     margin: 2rem 1rem;
+
+    // desktops
+    @media(min-width: 1025px) and (orientation: landscape) {
+        grid-area: posts;
+    }
 
     &__pages {
         display: flex;
@@ -2595,6 +2605,12 @@ html {
         margin: 0 auto 2rem auto;
     }
 
+    // desktops
+    @media(min-width: 1025px) and (orientation: landscape) {
+        grid-area: search;
+        width: 100%;
+    }
+
     &__input {
         height: 40px;
         flex-grow: 1;
@@ -2624,6 +2640,12 @@ html {
     @media(min-width: 850px) {
         max-width: 760px;
         margin: 0 auto 2rem auto;
+    }
+
+    // desktops
+    @media(min-width: 1025px) and (orientation: landscape) {
+        grid-area: months;
+        width: 100%;
     }
 
     &__header {
@@ -2665,6 +2687,11 @@ html {
         margin: 0 auto 2rem auto;
     }
 
+    // desktops
+    @media(min-width: 1025px) and (orientation: landscape) {
+        grid-area: older;
+    }
+
     &__header {
         margin-top: 0;
         padding-bottom: 0.5rem;
@@ -2698,6 +2725,11 @@ html {
         margin: 0 auto 2rem auto;
     }
 
+    // desktops
+    @media(min-width: 1025px) and (orientation: landscape) {
+        grid-area: category;
+    }
+
     &__header {
         margin-top: 0;
         padding-bottom: 0.5rem;
@@ -2725,5 +2757,22 @@ html {
         &--popular {
             background-color: $brown;
         }
+    }
+}
+
+// post-list (post-list.html)
+.post-list {
+    @media(min-width: 1025px) and (orientation: landscape) {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 5fr 2fr;
+        grid-template-rows: 100px 100px 500px 400px 200px 400px;
+        grid-template-areas: "switchers switchers"
+            "posts search"
+            "posts months"
+            "posts older"
+            "posts category"
+            "posts .";
     }
 }
