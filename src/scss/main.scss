@@ -2671,6 +2671,14 @@ html {
         display: flex;
         justify-content: space-between;
         font-weight: 300;
+
+        &:hover {
+            @media(min-width: 1025px) and (orientation: landscape) {
+                color: $brown-hover;
+                text-decoration: underline;
+                cursor: pointer;
+            }
+        }
     }
 }
 
@@ -2709,6 +2717,14 @@ html {
         margin-left: 2rem;
         font-size: 0.875rem;
         font-weight: 300;
+
+        &:hover {
+            @media(min-width: 1025px) and (orientation: landscape) {
+                color: $brown-hover;
+                text-decoration: underline;
+                cursor: pointer;
+            }
+        }
     }
 }
 
