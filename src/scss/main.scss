@@ -2792,3 +2792,19 @@ html {
             "posts .";
     }
 }
+
+// post (post.html)
+.post {
+    &--main {
+        padding-bottom: 1rem;
+    }
+
+    &__list {
+        margin: 1.5rem 0;
+    }
+
+    &__list-item {
+        margin-bottom: 0.5rem;
+        font-family: $lato;
+    }
+}
