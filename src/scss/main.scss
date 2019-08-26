@@ -2816,6 +2816,36 @@ html {
     &__header {
         font-family: $oswald;
     }
+
+    &__form {
+        margin-bottom: 6rem;
+    }
+
+    &__form-label {
+        display: block;
+        font-family: $lato;
+        font-size: 0.625rem;
+        text-transform: uppercase;
+    }
+
+    &__form-input {
+        width: 100%;
+        margin-top: 0.25rem;
+    }
+
+    &__form-message {
+        width: 100%;
+        margin-top: 0.25rem;
+    }
+
+    &__form-button {
+        padding: 0.5rem 1.25rem;
+        border-style: none;
+        background-color: $brown;
+        font-family: $oswald;
+        color: #fff;
+        letter-spacing: 0.1rem;
+    }
 }
 
 .comment {
