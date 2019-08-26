@@ -2878,6 +2878,14 @@ html {
         font-family: $oswald;
         color: #fff;
         letter-spacing: 0.1rem;
+        transition: 0.5s;
+
+        &:hover {
+            @media(min-width: 1025px) and (orientation: landscape) {
+                background-color: $brown-hover;
+                cursor: pointer;
+            }
+        }
     }
 }
 
