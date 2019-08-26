@@ -2808,3 +2808,65 @@ html {
         font-family: $lato;
     }
 }
+
+// comments (post.html)
+.comments {
+    margin: 0 1rem 2rem 1rem;
+
+    &__header {
+        font-family: $oswald;
+    }
+}
+
+.comment {
+    margin-bottom: 2rem;
+    display: flex;
+
+    &--reply {
+        padding-left: 3rem;
+        padding-bottom: 2rem;
+        border-bottom: 1px solid $light-gray;
+    }
+
+    &__avatar {
+        height: 3rem;
+        width: 3rem;
+        border-radius: 1.5rem;
+        background-color: $brown;
+
+        // content inside
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__data {
+        flex-basis: 80%;
+        margin-left: 1rem;
+
+        // content inside
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__username {
+        flex-basis: 100%;
+        margin-bottom: 0.5rem;
+        font-family: $oswald;
+        font-size: 0.75rem;
+        font-weight: 700;
+    }
+
+    &__time {
+        flex-basis: 100%;
+        font-family: $oswald;
+        font-size: 0.75rem;
+        letter-spacing: 0.1rem;
+    }
+
+    &__content {
+        font-family: $lato;
+        font-size: 0.75rem;
+        line-height: 1.5;
+    }
+}
