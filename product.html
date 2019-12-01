@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400|Oswald:300,400,700&display=swap&subset=latin-ext"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <nav class="navigation">
+        <ul class="navigation__list navigation__list--js">
+            <li class="navigation__item">
+                <a class="navigation__link" href="index.html">Strona główna</a></li>
+            <li class="navigation__item">
+                <a class="navigation__link" href="portfolio.html">Realizacje</a>
+            </li>
+            <li class="navigation__item"><a class="navigation__link" href="portfolio.html">Usługi</a></li>
+            <li class="navigation__item"><a class="navigation__link" href="post-list.html">Aktualności</a></li>
+            <li class="navigation__item"><a class="navigation__link navigation__link--active" href="shop.html">Sklep</a>
+            </li>
+            <li class="navigation__item"><a class="navigation__link" href="about.html">O nas</a></li>
+            <li class="navigation__item">
+                <a class="navigation__link" href="contact.html">Kontakt</a></li>
+            <li class="navigation__item">
+                <a class="navigation__link" href="#"><i class=" navigation__icon fas fa-shopping-basket"></i></a>
+            </li>
+            <li class="navigation__item">
+                <a class="navigation__link" href="#"><i class="navigation__icon fas fa-search"></i></a></li>
+        </ul>
+        <button class="navigation__button navigation__button--js"><i class="fas fa-bars"></i></button>
+    </nav>
+
+    <header class="top">
+        <h1 class="top__header">Architektura wnętrz</h1>
+        <img class="top__image" src="assets/img/design-subheader.png" alt="Design your space.">
+    </header>
+
+    <main>
+        <section class="product-data">
+            <div class="product product--main">
+                <a class="product__link product__link--main" href="product.html">
+                    <img class="product__image product__image--main" src="assets/img/pages/product-big.jpg" alt="sofa">
+                </a>
+                <div class="product__info product__info--main">
+                    <h4 class="product__name product__name--main">Nazwa produktu</h4>
+                    <span class="product__prize product__prize--main">199zł</span>
+                    <img class="product__opinion product__opinion--main" src="assets/img/ui/stars.png" alt="ocena">
+                </div>
+                <div class="product-data__text-content">
+                    <p class="product-data__short-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates quo quae laudantium totam id at saepe impedit perferendis repellendus eveniet ducimus inventore, quod, repellat. Distinctio corporis voluptas, facilis deleniti atque.</p>
+                    <form class="product-data__form" action="#">
+                        <p>
+                            <label class="product-data__label" for="amount">Ilość sztuk</label>
+                            <input id="amount" class="product-data__amount" type="number" min="1" max="1000">
+                        </p>
+                        <button class="product-data__button">Dodaj do koszyka</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="description">
+            <div class="description__tab description__tab--main">
+                <h5 class="description__tab-name">Opis produktu</h5>
+            </div>
+            <div class="description__tab">
+                <h5 class="description__tab-name">Opinie o produkcie</h5>
+            </div>
+            <article class="description__article">
+                <h4 class="description__article-title">Lorem ipsum dolor sit</h4>
+                <p class="description__article-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat cumque iusto autem explicabo nisi aperiam doloribus nihil sit odio. Voluptate earum totam quibusdam ullam inventore quaerat fuga maxime doloremque numquam, natus eius, atque aut laborum voluptates vero praesentium nihil temporibus, quod labore dolor dolores quasi iste suscipit. Magnam ratione soluta vitae nihil, a commodi nisi consectetur ipsa atque eligendi facere impedit, accusantium asperiores exercitationem recusandae corporis cumque. Similique est libero cumque dolorem in quae dicta ad aut odit facere at harum, dolores illum ratione animi officiis, voluptatum fugiat laborum suscipit sunt atque error dolorum. Corrupti tempore fuga inventore blanditiis! Esse.</p>
+            </article>
+        </section>
+
+        <section class="others">
+            <h4 class="others__header">Podobne produkty</h4>
+            <div class="product">
+                <a class="product__link" href="product.html">
+                    <img class="product__image" src="assets/img/pages/product-1-sm.png" alt="koszyk">
+                    <div class="product__options">
+                        <div class="product__option product__option--main">
+                            <img class="product__icon" src="assets/img/ui/product-item-icon-1.png"
+                                alt="dodaj do koszyka">
+                        </div>
+                        <div class="product__option">
+                            <img class="product__icon" src="assets/img/ui/product-item-icon-2.png" alt="dodaj do ulubionych">
+                        </div>
+                        <div class="product__option">
+                            <img class="product__icon" src="assets/img/ui/product-item-icon-3.png" alt="udostępnij">
+                        </div>
+                        <div class="product__option">
+                            <img class="product__icon" src="assets/img/ui/product-item-icon-4.png" alt="powiększ">
+                        </div>
+                    </div>
+                </a>
+                <div class="product__info">
+                    <h4 class="product__name">Nazwa produktu</h4>
+                    <p class="product__type">Lorem ipsum dolor sit amet consectetur</p>
+                    <span class="product__prize">199zł</span>
+                    <img class="product__opinion" src="assets/img/ui/stars.png" alt="ocena">
+                </div>
+            </div>
+            <div class="product">
+                <a class="product__link" href="product.html">
+                    <img class="product__image" src="assets/img/pages/product-2-sm.png" alt="krzesło">
+                    <div class="product__options">
+                        <div class="product__option product__option--main">
+                            <img class="product__icon" src="assets/img/ui/product-item-icon-1.png" alt="dodaj do koszyka">
+                        </div>
+                        <div class="product__option">
+                            <img class="product__icon" src="assets/img/ui/product-item-icon-2.png" alt="dodaj do ulubionych">
+                        </div>
+                        <div class="product__option">
+                            <img class="product__icon" src="assets/img/ui/product-item-icon-3.png" alt="udostępnij">
+                        </div>
+                        <div class="product__option">
+                            <img class="product__icon" src="assets/img/ui/product-item-icon-4.png" alt="powiększ">
+                        </div>
+                    </div>
+                </a>
+                <div class="product__info">
+                    <h4 class="product__name">Nazwa produktu</h4>
+                    <p class="product__type">Lorem ipsum dolor sit amet consectetur</p>
+                    <span class="product__prize">199zł</span>
+                    <img class="product__opinion" src="assets/img/ui/stars.png" alt="ocena">
+                </div>
+            </div>
+            <div class="product">
+                <a class="product__link" href="product.html">
+                    <img class="product__image" src="assets/img/pages/product-3-sm.png" alt="lampa">
+                    <div class="product__options">
+                        <div class="product__option product__option--main">
+                            <img class="product__icon" src="assets/img/ui/product-item-icon-1.png" alt="dodaj do koszyka">
+                        </div>
+                        <div class="product__option">
+                            <img class="product__icon" src="assets/img/ui/product-item-icon-2.png" alt="dodaj do ulubionych">
+                        </div>
+                        <div class="product__option">
+                            <img class="product__icon" src="assets/img/ui/product-item-icon-3.png" alt="udostępnij">
+                        </div>
+                        <div class="product__option">
+                            <img class="product__icon" src="assets/img/ui/product-item-icon-4.png" alt="powiększ">
+                        </div>
+                    </div>
+                </a>
+                <div class="product__info">
+                    <h4 class="product__name">Nazwa produktu</h4>
+                    <p class="product__type">Lorem ipsum dolor sit amet consectetur</p>
+                    <span class="product__prize">199zł</span>
+                    <img class="product__opinion" src="assets/img/ui/stars.png" alt="ocena">
+                </div>
+            </div>
+            <div class="product">
+                <a class="product__link" href="product.html">
+                    <img class="product__image" src="assets/img/pages/product-5-sm.png" alt="sofa">
+                    <div class="product__options">
+                        <div class="product__option product__option--main">
+                            <img class="product__icon" src="assets/img/ui/product-item-icon-1.png" alt="dodaj do koszyka">
+                        </div>
+                        <div class="product__option">
+                            <img class="product__icon" src="assets/img/ui/product-item-icon-2.png" alt="dodaj do ulubionych">
+                        </div>
+                        <div class="product__option">
+                            <img class="product__icon" src="assets/img/ui/product-item-icon-3.png" alt="udostępnij">
+                        </div>
+                        <div class="product__option">
+                            <img class="product__icon" src="assets/img/ui/product-item-icon-4.png" alt="powiększ">
+                        </div>
+                    </div>
+                </a>
+                <div class="product__info">
+                    <h4 class="product__name">Nazwa produktu</h4>
+                    <p class="product__type">Lorem ipsum dolor sit amet consectetur</p>
+                    <span class="product__prize">199zł</span>
+                    <img class="product__opinion" src="assets/img/ui/stars.png" alt="ocena">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <section class="more">
+        <div class="more__wrapper">
+            <div class="more__about">
+                <h4 class="more__header">O nas</h4>
+                <p class="more__about-content">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui est dolore nihil quas ducimus velit facilis asperiores voluptate quod vero earum quibusdam excepturi magni nisi, ullam iure eos harum iste!</p>
+            </div>
+            <div class="more__help">
+                <h4 class="more__header">Pomoc</h4>
+                <ul class="more__help-list">
+                    <li class="more__help-item">
+                        <a class="more__help-link" href="#">Regulamin serwisu</a>
+                    </li>
+                    <li class="more__help-item">
+                        <a class="more__help-link" href="#">Logowanie na konto</a>
+                    </li>
+                    <li class="more__help-item">
+                        <a class="more__help-link" href="#">Wsparcie techniczne</a>
+                    </li>
+                    <li class="more__help-item">
+                        <a class="more__help-link" href="#">FAQ</a>
+                    </li>
+                    <li class="more__help-item">
+                        <a class="more__help-link" href="#">Kariera w firmie</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="more__contact">
+                <h4 class="more__header">Kontakt</h4>
+                <ul class="more__contact-list">
+                    <li class="more__contact-item">
+                        <img class="more__contact-icon" src="assets/img/ui/contact-footer-icon-pin.png"
+                            alt="lokalizacja">
+                        ul. Ulica 35C
+                    </li>
+                    <li class="more__contact-item">
+                        <img class="more__contact-icon" src="assets/img/ui/contact-footer-icon-phone.png"
+                            alt="numer telefonu">
+                        123-456-789
+                    </li>
+                    <li class="more__contact-item">
+                        <img class="more__contact-icon" src="assets/img/ui/contact-footer-icon-email.png" alt="email">
+                        firma@domena.pl
+                    </li>
+                </ul>
+                <div class="more__contact-socials">
+                    <a class="more__contact-link" href="#"><img class="more__contact-social" src="assets/img/social/social-icon-fb.png" alt="facebook"></a>
+                    <a class="more__contact-link" href="#"><img class="more__contact-social" src="assets/img/social/social-icon-inst.png" alt="instagram"></a>
+                    <a class="more__contact-link" href="#"><img class="more__contact-social" src="assets/img/social/social-icon-pin.png" alt="pinterest"></a>
+                    <a class="more__contact-link" href="#"><img class="more__contact-social" src="assets/img/social/social-icon-plus.png" alt="google plus"></a>
+                    <a class="more__contact-link" href="#"><img class="more__contact-social" src="assets/img/social/social-icon-twit.png" alt="twitter"></a>
+                </div>
+            </div>
+            <div class="more__newsletter">
+                <h4 class="more__header">Newsletter</h4>
+                <form class="more__newsletter-form" action="#">
+                    <p>
+                        <label class="more__newsletter-label" for="email">Zapisz się na nasz newsletter:</label>
+                        <input class="more__newsletter-input" id="email" type="email" placeholder="Adres email">
+                    </p>
+                    <button class="more__newsletter-button">Subskrybuj</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">&copy; Copyright 2019 Firma Wszelkie prawa zastrzeżone</footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
