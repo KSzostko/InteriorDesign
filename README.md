@@ -7,5 +7,5 @@ Service consists of 7 subpages (apart from homepage):
 - shop (fifth link in menu)
 - shop item (shows after clicking on item image on shop subpage)
 - about (sixth link in menu)
-- contact (last link in menu)
+- contact (last link in menu)  
 Link to demo: https://kszostko.github.io/InteriorDesign/
